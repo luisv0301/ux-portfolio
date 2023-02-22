@@ -7,19 +7,24 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div>
         <h2>Contactme 👋</h2>
-        <Link href="" className={styles.footer__email}>
+        <Link
+          href="mailto:luisvbdr0301@gmail.com"
+          className={styles.footer__email}
+        >
           luisvbdr0301@gmail.com
         </Link>
       </div>
       <ul className={styles.footer__list}>
         <li className={styles.footer__item}>
-          <Link href=""></Link>LinkedIn{" "}
+          <Link href="https://ve.linkedin.com/in/luis-vasquez-ui">
+            LinkedIn
+          </Link>
         </li>
         <li className={styles.footer__item}>
-          <Link href=""></Link>Behance
+          <Link href="https://www.behance.net/luisv0301">Behance</Link>
         </li>
         <li className={styles.footer__item}>
-          <Link href=""></Link>Twitter
+          <Link href="https://twitter.com/Luisvbdr">Twitter</Link>
         </li>
       </ul>
     </footer>

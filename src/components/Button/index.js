@@ -3,7 +3,7 @@ import style from "./button.module.css";
 
 export default function Button({ children }) {
   return (
-    <Link href="/" className={style.button}>
+    <Link href="mailto:luisvbdr0301@gmail.com" className={style.button}>
       {children}
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,5 @@
 .layout {
-  max-width: 1040px;
+  max-width: 62ch;
   margin: 0 auto;
+  padding: 1.5rem 1rem;
 }

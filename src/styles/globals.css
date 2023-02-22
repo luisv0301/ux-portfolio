@@ -35,7 +35,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "sans-serif";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: #475569;
 }
 
@@ -45,8 +46,17 @@ h3,
 h4,
 h5 {
   color: #0f172a;
+  font-family: "Roquefort Trial Semi-Strong";
+  font-weight: 500;
 }
 
+p,
+ul,
+button,
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
 h1 {
   font-weight: 500;
 }
@@ -56,10 +66,45 @@ h2 {
   line-height: 1.1;
   font-weight: 500;
 }
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
 
-h2 + p,
-h1 + p {
-  margin-top: 0.5rem;
+* + p {
+  margin-top: 1rem;
+}
+
+img + p {
+  margin-top: 1.5rem;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+h4 {
+  margin-top: 1.5rem;
+}
+
+article + article {
+  margin-top: 2.5rem;
+}
+
+li {
+  max-width: 60ch;
+}
+
+li + li {
+  margin-top: 1rem;
+}
+
+h3 {
+  margin-top: 1.5rem;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,6 +116,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -95,5 +141,17 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
   }
 }

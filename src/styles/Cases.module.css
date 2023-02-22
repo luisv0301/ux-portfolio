@@ -1,0 +1,229 @@
+.sections > section {
+  margin-top: 3rem;
+}
+
+/* .articles > article {
+  margin-top: 2rem;
+}
+*/
+.headingLarge {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.findings {
+  padding: 0;
+  list-style: none;
+}
+
+.usability__finding {
+  max-width: initial;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.usability__finding > * {
+  flex: 1;
+}
+
+.usability__finding:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.usability__description {
+  flex-basis: 275px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.usability__quote {
+  position: relative;
+  font-style: italic;
+  margin-inline: auto;
+  font-size: 1.1rem;
+  max-width: 32ch;
+  text-align: center;
+}
+
+.usability__quote > svg {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: -16px;
+  top: -33%;
+  z-index: -1;
+}
+
+.usability__quote > svg path {
+  fill: #cdf4f9;
+}
+
+.revers-flow {
+  flex-direction: row-reverse;
+}
+
+/*Recipes */
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url("../../public/images/blue-noise.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.5rem;
+  border-radius: 12px;
+  outline: 1px dashed #66c0cc;
+  outline-offset: 8px;
+}
+
+.header > * {
+  margin-bottom: 4rem;
+}
+
+.finding__imgContainer {
+  flex: 1.5 370px;
+}
+
+.sections h3 + p,
+.sections h2 + p {
+  margin-top: 1rem;
+}
+
+.sections p + img {
+  margin-top: 2rem;
+}
+
+.sections h2 + img {
+  margin-top: 1rem;
+}
+.sections h3 + img {
+  margin-top: 1rem;
+}
+
+.sections h2 + ul {
+  margin-top: 1rem;
+}
+
+.section img + p {
+  margin-top: 1rem;
+}
+
+.cover {
+  width: 100%;
+  height: 462px;
+  position: relative;
+  background-image: url("../../public/images/blue-noise.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 12px;
+  outline: 1px dashed #66c0cc;
+  outline-offset: 8px;
+}
+
+.cover img {
+  max-width: 386px;
+}
+
+.coverOne {
+  position: absolute;
+  bottom: -154px;
+  left: -50px;
+  z-index: 3;
+}
+
+.coverTwo {
+  position: absolute;
+  bottom: -200px;
+  z-index: 2;
+  left: 25%;
+}
+
+.coverThree {
+  position: absolute;
+  left: 50%;
+  bottom: -250px;
+}
+
+.arrow__container {
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 12px;
+  outline: 1px dashed #66c0cc;
+  outline-offset: 8px;
+}
+
+.arrowOne {
+  top: 0;
+  position: absolute;
+  right: -12%;
+  width: 80px;
+}
+
+.arrowTwo {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+}
+
+.arrowOne path,
+.arrowTwo path {
+  fill: #66c0cc;
+}
+
+.screens__grid {
+  --size: 180px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
+  gap: 2rem;
+}
+
+.outline__img {
+  outline: 1px dashed #66c0cc;
+  outline-offset: 8px;
+  border-radius: 12px;
+}
+
+.mt {
+  margin-top: 2rem;
+}
+
+.competidores {
+  width: 100%;
+  max-width: 520px;
+  margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+  .arrowOne,
+  .arrowTwo {
+    display: none;
+  }
+}
+
+@media (max-width: 692px) {
+  .reverse__flow {
+    flex-direction: column-reverse;
+  }
+  .reset__basis {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .screens__grid {
+    --size: 130px;
+  }
+  .coverOne {
+    left: -142px;
+  }
+}
