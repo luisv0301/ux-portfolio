@@ -11,16 +11,11 @@ import findingTwo from "../../public/images/finding-2.png";
 import findingThree from "../../public/images/finding-3.png";
 import heuristica from "../../public/images/vaga-heuristica.png";
 import home from "../../public/images/homepage.png";
-import micrositio from "../../public/images/micrositio.png";
-
+import micrositio from "../../public/images/ciudad.png";
 import cover1 from "../../public/images/cover-1.png";
-
 import cover2 from "../../public/images/cover-2.png";
-
 import cover3 from "../../public/images/cover-3.png";
-
 import { motion } from "framer-motion";
-
 import vaga1 from "../../public/images/vaga-1.png";
 import vaga2 from "../../public/images/vaga-2.png";
 import vaga3 from "../../public/images/vaga-3.png";
