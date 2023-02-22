@@ -257,6 +257,7 @@
   display: grid;
   place-items: center;
   text-align: center;
+  padding: 1rem
 }
 .coverTwo > h2 {
   color: #fffbeb;
