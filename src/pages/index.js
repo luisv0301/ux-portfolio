@@ -45,7 +45,7 @@ export default function Home() {
             >
               Soluciones creativas a problemas complejos. Actualmente trabajando
               para una agencia de desarrollo de software. En mi tiempo libre me
-              gusta aprender sobre psicología cognitiva y jugar con CSS, si, con
+              gusta jugar con CSS, si, con
               CSS. ¿Tienes algún proyecto en mente? Dejame un mensaje.
             </motion.p>
           </div>

@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 
-import { Inter, Poppins } from "@next/font/google";
+import { Poppins } from "@next/font/google";
 import localFont from "@next/font/local";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
@@ -8,12 +8,12 @@ const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 const attila = localFont({
   src: [
     {
-      path: "./RoquefortTrial-Strong.otf",
+      path: "./RoquefortTrial-Strong.woff2",
       weight: "700",
       style: "normal",
     },
     {
-      path: "./RoquefortTrial-Semi-Strong.otf",
+      path: "./RoquefortTrial-Semi-Strong.woff2",
       weight: "600",
       style: "normal",
     },

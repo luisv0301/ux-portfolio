@@ -13,7 +13,6 @@ import refineTwo from "../../public/images/refineTwo.png";
 import one from "../../public/images/one.png";
 import two from "../../public/images/two.png";
 import three from "../../public/images/three.png";
-import ui from "../../public/images/ui.png";
 import sitemap from "../../public/images/sitemap-recipe.png";
 import flow from "../../public/images/flow-recipe.png";
 import journeymap from "../../public/images/journeymap-recipe.png";
