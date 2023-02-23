@@ -19,7 +19,38 @@ export default function Home() {
         <meta name="description" content="Portafolio de diseñador UX" />
         <meta name="keywords" content="Diseñador UX, UI, CSS, Portafolio UX" />
         <meta name="author" content="Luis Vásquez" />
-        <meta property="og:image" content="../../public/og-img.png" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+        />
+
+        <meta
+          property="og:url"
+          content="https://ux-portfolio-eight.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Luis Vásquez Portafolio" />
+        <meta property="og:description" content="Portafolio de diseñador UX" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="twitter:domain"
+          content="ux-portfolio-eight.vercel.app"
+        />
+        <meta
+          property="twitter:url"
+          content="https://ux-portfolio-eight.vercel.app/"
+        />
+        <meta name="twitter:title" content="Luis Vásquez Portafolio" />
+        <meta name="twitter:description" content="Portafolio de diseñador UX" />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+        />
 
         <link rel="icon" href="/favicon.png" />
       </Head>
