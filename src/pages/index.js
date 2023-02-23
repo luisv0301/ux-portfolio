@@ -21,9 +21,8 @@ export default function Home() {
         <meta name="author" content="Luis Vásquez" />
         <meta
           property="og:image"
-          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+          content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
         />
-
         <meta
           property="og:url"
           content="https://ux-portfolio-eight.vercel.app/"
@@ -33,9 +32,8 @@ export default function Home() {
         <meta property="og:description" content="Portafolio de diseñador UX" />
         <meta
           property="og:image"
-          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+          content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
         />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:domain"
@@ -49,9 +47,8 @@ export default function Home() {
         <meta name="twitter:description" content="Portafolio de diseñador UX" />
         <meta
           name="twitter:image"
-          content="https://i.ibb.co/tpJKc7Y/og-img.png"
+          content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
         />
-
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div>

@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div>
-        <h2>Contactme 👋</h2>
+        <h2>Contactme 📧</h2>
         <Link
           href="mailto:luisvbdr0301@gmail.com"
           className={styles.footer__email}
