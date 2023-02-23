@@ -7,7 +7,7 @@
 }
 */
 .headingLarge {
-  font-size: 56px;
+  font-size: 3.4rem;
   line-height: 1;
 }
 
@@ -225,5 +225,11 @@
   }
   .coverOne {
     left: -142px;
+  }
+
+  .headingLarge{
+    font-size: 2.5rem;
+    line-height: 1.1;
+
   }
 }

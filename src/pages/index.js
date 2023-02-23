@@ -72,7 +72,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.45 }}
                 >
-                  Mejorar la experiencia de usuario y aumentar el tiempo en el
+                  Mejorando la experiencia de usuario y aumentando el tiempo en el
                   sitio de las personas usuarias.
                 </motion.p>
               </div>

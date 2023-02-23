@@ -203,7 +203,7 @@ export default function recipes() {
             <Image src={journeymap} />
           </article>
           <article>
-            <h3>Analisis competitivo</h3>
+            <h3>Análisis competitivo</h3>
             <p>
               Llevé a cabo un análisis competitivo, donde comparé la experiencia
               de usuario en cada una de las aplicaciones de los competidores,
