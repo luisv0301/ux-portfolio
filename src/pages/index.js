@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/styles/Home.module.css";
-import { delay, motion } from "framer-motion";
+import styles from "@/styles/Home.module.scss";
+import { motion } from "framer-motion";
 
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -54,11 +53,18 @@ export default function Home() {
       <div>
         <header className={styles.header}>
           <div className={styles.header__text}>
-            <p className={styles.header__subtitle}>Luis Vásquez</p>
-            <motion.h1
+            <motion.p
+              className={styles.header__subtitle}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45 }}
+            >
+              Luis Vásquez
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45, delay: 0.15 }}
             >
               <span className={styles.header__firstLine}>Diseñador</span>
               <span className={styles.header__secondLine}>
@@ -67,14 +73,14 @@ export default function Home() {
                   src="/images/hand.png"
                   alt=""
                   animate={{ rotateZ: [null, -20, 20, 0] }}
-                  transition={{ delay: 0.75 }}
+                  transition={{ delay: 0.8 }}
                 />
               </span>
             </motion.h1>
             <motion.p
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 35 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45 }}
+              transition={{ duration: 0.45, delay: 0.15 }}
             >
               Soluciones creativas a problemas complejos. Actualmente trabajando
               para una agencia de desarrollo de software. En mi tiempo libre me
@@ -82,16 +88,21 @@ export default function Home() {
               Dejame un mensaje.
             </motion.p>
           </div>
-          <div className="header__cta">
+          <motion.div
+            className="header__cta"
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.45, delay: 0.15 }}
+          >
             <Button>Contactame</Button>
-          </div>
+          </motion.div>
         </header>
         <section className={styles.caseStudies}>
           <article>
-            <div className={styles.caseStudy__container}>
-              <div className={styles.caseStudy__description}>
+            <div className={styles.caseStudies__container}>
+              <div className={styles.caseStudies__description}>
                 <motion.h2
-                  className={styles.caseStudy__title}
+                  className={styles.caseStudies__title}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -109,12 +120,12 @@ export default function Home() {
                   el sitio de las personas usuarias.
                 </motion.p>
               </div>
-              <Link href="/vagabundeando" className={styles.caseStudy__link}>
+              <Link href="/vagabundeando" className={styles.caseStudies__link}>
                 Ver caso de estudio →
               </Link>
             </div>
             <motion.div
-              className={styles.caseStudy__img}
+              className={styles.caseStudies__img}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -129,10 +140,10 @@ export default function Home() {
             </motion.div>
           </article>
           <article className={styles.mt__reset}>
-            <div className={styles.caseStudy__container}>
-              <div className={styles.caseStudy__description}>
+            <div className={styles.caseStudies__container}>
+              <div className={styles.caseStudies__description}>
                 <motion.h2
-                  className={styles.caseStudy__title}
+                  className={styles.caseStudies__title}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -149,12 +160,12 @@ export default function Home() {
                   Ayudando a las personas a cocinar saludablemente.
                 </motion.p>
               </div>
-              <Link href="/recipes" className={styles.caseStudy__link}>
+              <Link href="/recipes" className={styles.caseStudies__link}>
                 Ver caso de estudio →
               </Link>
             </div>
             <motion.div
-              className={styles.caseStudy__img}
+              className={styles.caseStudies__img}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
-import styles from "@/styles/Cases.module.css";
+import styles from "@/styles/Cases.module.scss";
 
 import cover from "../../public/images/vagabundeando.png";
 import findingOne from "../../public/images/finding-1.png";
@@ -130,7 +130,7 @@ export default function vagabundeando() {
             <div>
               <h2 className={styles.header__subtitle}>Rol</h2>
               <p>
-                Disenador UX/UI (investigación con usuarios, arquitectura de
+                Diseñador UX/UI (investigación con usuarios, arquitectura de
                 información, wireframe, UI kit y prototipado).
               </p>
             </div>
@@ -207,7 +207,10 @@ export default function vagabundeando() {
                   </defs>
                 </motion.svg>
 
-                <Image src={heuristica} />
+                <Image
+                  src={heuristica}
+                  alt="diferentes pantallas de sitio web de vagabundeando donde se encontraron problemas de usabilidad"
+                />
               </div>
 
               <p>
@@ -331,7 +334,11 @@ export default function vagabundeando() {
             </article>
             <article>
               <h3>Identificando oportunidades de mejora</h3>
-              <Image src={competidores} className={styles.competidores} />
+              <Image
+                src={competidores}
+                className={styles.competidores}
+                alt="Competidores principales de Vagabundeando: Airbnb, Get yout guide, Tripadvisor y Yelp"
+              />
               <p>
                 En esta etapa llevé a cabo un análisis competitivo para entender
                 en mayor profundidad el mercado donde se encontraba el producto,
@@ -403,7 +410,7 @@ export default function vagabundeando() {
             <article>
               <h3>Pantallas principales</h3>
               <motion.div
-                className={styles.screens__grid}
+                className={styles.grid}
                 variants={container}
                 initial="hidden"
                 whileInView="show"
@@ -434,7 +441,7 @@ export default function vagabundeando() {
             <h2>Resultados</h2>
             <ul>
               <li>
-                Incrementos el tiempo que pasan las personas usuarias en el
+                Incremento en el tiempo que pasan las personas usuarias en el
                 sitio web.
               </li>
               <li>Incremento en el número de visitas.</li>

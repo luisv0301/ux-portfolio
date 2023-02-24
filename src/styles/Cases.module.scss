@@ -1,11 +1,19 @@
-.sections > section {
-  margin-top: 3rem;
+@mixin flex($direction: row, $gap: var(--space-xs)) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
 }
 
-/* .articles > article {
-  margin-top: 2rem;
+%bg-img-properties {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-*/
+
+.sections > section {
+  margin-top: var(--space-l);
+}
+
 .headingLarge {
   font-size: 3.4rem;
   line-height: 1;
@@ -17,11 +25,10 @@
 }
 
 .usability__finding {
-  max-width: initial;
-  display: flex;
-  gap: 1rem;
+  @include flex($gap: var(--space-xs));
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: initial;
 }
 
 .usability__finding > * {
@@ -29,16 +36,14 @@
 }
 
 .usability__finding:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: var(--space-l);
 }
 
 .usability__description {
+  @include flex($direction: column, $gap: var(--space-xs));
   flex-basis: 275px;
-  flex-direction: column;
-  display: flex;
   justify-content: center;
-  gap: 1rem;
-  padding: 0 1rem;
+  padding: 0 var(--space-xs);
 }
 
 .usability__quote {
@@ -67,24 +72,18 @@
   flex-direction: row-reverse;
 }
 
-/*Recipes */
-
 .header__description {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @extend %bg-img-properties;
+  @include flex($direction: column, $gap: var(--space-l));
   background-image: url("../../public/images/blue-noise.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 2.5rem;
-  border-radius: 12px;
+  padding: var(--space-m);
+  border-radius: var(--border-radius);
   outline: 1px dashed #66c0cc;
   outline-offset: 8px;
 }
 
 .header > * {
-  margin-bottom: 4rem;
+  margin-bottom: var(--space-xl);
 }
 
 .finding__imgContainer {
@@ -93,38 +92,25 @@
 
 .sections h3 + p,
 .sections h2 + p {
-  margin-top: 1rem;
+  margin-top: var(--space-xs);
 }
 
 .sections p + img {
   margin-top: 2rem;
 }
 
-.sections h2 + img {
-  margin-top: 1rem;
-}
-.sections h3 + img {
-  margin-top: 1rem;
-}
-
-.sections h2 + ul {
-  margin-top: 1rem;
-}
-
-.section img + p {
-  margin-top: 1rem;
+.sections:where(h2 + img, h3 + img, h2 + ul, img + p) {
+  margin-top: var(--space-xs);
 }
 
 .cover {
+  @extend %bg-img-properties;
   width: 100%;
   height: 462px;
   position: relative;
   background-image: url("../../public/images/blue-noise.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   outline: 1px dashed #66c0cc;
   outline-offset: 8px;
 }
@@ -155,8 +141,8 @@
 
 .arrow__container {
   position: relative;
-  margin-top: 1rem;
-  border-radius: 12px;
+  margin-top: var(--space-xs);
+  border-radius: var(--border-radius);
   outline: 1px dashed #66c0cc;
   outline-offset: 8px;
 }
@@ -179,22 +165,22 @@
   fill: #66c0cc;
 }
 
-.screens__grid {
+.grid {
   --size: 180px;
-  margin-top: 2rem;
+  margin-top: var(--space-m);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--size), 1fr));
-  gap: 2rem;
+  gap: var(--space-m);
 }
 
 .outline__img {
   outline: 1px dashed #66c0cc;
   outline-offset: 8px;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
 }
 
 .mt {
-  margin-top: 2rem;
+  margin-top: var(--space-m);
 }
 
 .competidores {
@@ -220,16 +206,15 @@
 }
 
 @media (max-width: 500px) {
-  .screens__grid {
+  .grid {
     --size: 130px;
   }
   .coverOne {
     left: -142px;
   }
 
-  .headingLarge{
+  .headingLarge {
     font-size: 2.5rem;
     line-height: 1.1;
-
   }
 }

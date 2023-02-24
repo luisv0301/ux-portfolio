@@ -1,3 +1,13 @@
+:root {
+  --space-xs: 1rem;
+  --space-x: 1.5rem;
+  --space-m: 2rem;
+  --space-l: 2.5rem;
+  --space-xl: 4rem;
+
+  --border-radius: 12px;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -75,36 +85,30 @@ h4 {
   line-height: 1.1;
 }
 
-* + p {
-  margin-top: 1rem;
+* + p,
+li + li {
+  margin-top: var(--space-xs);
 }
 
-img + p {
-  margin-top: 1.5rem;
+img + p,
+h3 {
+  margin-top: var(--space-x);
 }
 
 section {
-  margin-top: 4rem;
+  margin-top: var(--space-xl);
 }
 
 h4 {
-  margin-top: 1.5rem;
+  margin-top: var(--space-x);
 }
 
 article + article {
-  margin-top: 2.5rem;
+  margin-top: var(--space-l);
 }
 
 li {
   max-width: 60ch;
-}
-
-li + li {
-  margin-top: 1rem;
-}
-
-h3 {
-  margin-top: 1.5rem;
 }
 
 /* A elements that don't have a class get default styles */

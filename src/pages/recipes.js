@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 
 import Footer from "@/components/Footer";
 import Layout from "@/components/Layout";
-import styles from "@/styles/Recipes.module.css";
+import styles from "@/styles/Recipes.module.scss";
+
 import cover from "../../public/images/recipes.png";
 import wireframeOne from "../../public/images/usabilityone.png";
 import wireframetwo from "../../public/images/usabilitytwo.png";
@@ -17,7 +18,6 @@ import sitemap from "../../public/images/sitemap-recipe.png";
 import flow from "../../public/images/flow-recipe.png";
 import journeymap from "../../public/images/journeymap-recipe.png";
 import persona from "../../public/images/user-persona.png";
-
 import wire1 from "../../public/images/wire1.png";
 import wire2 from "../../public/images/wire2.png";
 import wire3 from "../../public/images/wire3.png";
@@ -25,7 +25,6 @@ import wire4 from "../../public/images/wire4.png";
 import wire5 from "../../public/images/wire5.png";
 import wire6 from "../../public/images/wire6.png";
 import wire7 from "../../public/images/wire7.png";
-
 import final1 from "../../public/images/final1.png";
 import final2 from "../../public/images/final2.png";
 import final3 from "../../public/images/final3.png";
@@ -93,7 +92,9 @@ export default function recipes() {
 
           <div className={styles.header__description}>
             <div>
-              <h2 className={styles.header__subtitle}>Planteamiento del problema</h2>
+              <h2 className={styles.header__subtitle}>
+                Planteamiento del problema
+              </h2>
               <p>
                 Debido a las ajetreadas rutinas diarias, las personas ha
                 adoptado malos hábitos alimentarios que afectan a su salud.
@@ -130,6 +131,7 @@ export default function recipes() {
             </motion.h2>
           </div>
         </header>
+
         <section className={styles.section}>
           <h2 className={styles.icon__heading}>
             <span>
@@ -189,7 +191,10 @@ export default function recipes() {
               siempre en el foco durante todo el proceso de diseño y guiar mis
               decisiones.
             </p>
-            <Image src={persona} />
+            <Image
+              src={persona}
+              alt="User persona de Ana Vasquez, donde se muestran algunas de sus necesidades y objetivos"
+            />
           </article>
           <article>
             <h3>User jorney map</h3>
@@ -199,7 +204,10 @@ export default function recipes() {
               etapas donde estuvieran teniendo problemas, realicé un user
               journey map tomando en cuenta los user personas creados.
             </p>
-            <Image src={journeymap} />
+            <Image
+              src={journeymap}
+              alt="Journey map de Ana Vasquez, con los principales problemas que enfrenta al momento de querer cocinar de manera saludable"
+            />
           </article>
           <article>
             <h3>Análisis competitivo</h3>
@@ -259,16 +267,22 @@ export default function recipes() {
           </p>
           <article>
             <h3>Userflow</h3>
-            <Image src={flow} />
+            <Image
+              src={flow}
+              alt="Flujo principal de la aplicación donde el usuario tiene como objetivo encontrar una receta para cocinar"
+            />
           </article>
           <article>
             <h3>Sitemap</h3>
-            <Image src={sitemap} />
+            <Image
+              src={sitemap}
+              alt="Diagrama con los diferentes destinos de la aplicación"
+            />
           </article>
           <article>
             <h3>Wireframes</h3>
             <motion.div
-              className={styles.wireframes__grid}
+              className={styles.grid}
               variants={container}
               initial="hidden"
               whileInView="show"
@@ -480,7 +494,7 @@ export default function recipes() {
           <article>
             <h3>Pantallas principales</h3>
             <motion.div
-              className={styles.wireframes__grid}
+              className={styles.grid}
               variants={container}
               initial="hidden"
               whileInView="show"
