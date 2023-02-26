@@ -9,6 +9,12 @@
   justify-content: center;
   position: relative;
   min-height: 100vh;
+  &__overflowHidden {
+    overflow: hidden;
+    & > span {
+      display: inline-block;
+    }
+  }
   &__clippy {
     overflow: hidden;
     display: block;
@@ -149,7 +155,10 @@
 }
 
 @media (max-width: 500px) {
-  .caseStudy__title {
+  .caseStudies__title {
     font-size: 2rem;
+  }
+  .header__subtitle {
+    font-size: 1.1rem;
   }
 }

@@ -63,14 +63,16 @@ export default function Home() {
         <div>
           <header className={styles.header}>
             <div className={styles.header__text}>
-              <motion.p
-                className={styles.header__subtitle}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.45 }}
-              >
-                Luis Vásquez
-              </motion.p>
+              <p className={styles.header__overflowHidden}>
+                <motion.span
+                  className={styles.header__subtitle}
+                  initial={{ y: 150 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.75, delay: 0.15 }}
+                >
+                  Luis Vásquez
+                </motion.span>
+              </p>
               <h1>
                 <span className={styles.header__clippy}>
                   <motion.span
@@ -99,25 +101,29 @@ export default function Home() {
                   </motion.span>
                 </span>
               </h1>
-              <motion.p
-                initial={{ opacity: 0, y: 35 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.45, delay: 0.15 }}
-              >
-                Soluciones creativas a problemas complejos. Actualmente
-                trabajando para una agencia de desarrollo de software. En mi
-                tiempo libre me gusta jugar con CSS, si, con CSS. ¿Tienes algún
-                proyecto en mente? Déjame un mensaje.
-              </motion.p>
+              <p className={styles.header__overflowHidden}>
+                <motion.span
+                  initial={{ y: 150 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.75, delay: 0.15 }}
+                >
+                  Soluciones creativas a problemas complejos. Actualmente
+                  trabajando para una agencia de desarrollo de software. En mi
+                  tiempo libre me gusta jugar con CSS, si, con CSS. ¿Tienes
+                  algún proyecto en mente? Déjame un mensaje.
+                </motion.span>
+              </p>
             </div>
-            <motion.div
-              className="header__cta"
-              initial={{ opacity: 0, y: 35 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: 0.15 }}
-            >
-              <Button>Contactame</Button>
-            </motion.div>
+            <div className={styles.header__overflowHidden}>
+              <motion.div
+                className="header__cta"
+                initial={{ y: 200 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.75, delay: 0.15 }}
+              >
+                <Button>Contáctame</Button>
+              </motion.div>
+            </div>
           </header>
           <section className={styles.caseStudies}>
             <article>

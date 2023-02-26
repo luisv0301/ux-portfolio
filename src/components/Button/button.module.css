@@ -1,5 +1,5 @@
 .button {
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   text-decoration: none;
   width: fit-content;
   flex-grow: 0;
@@ -47,4 +47,10 @@
 
 .button > svg {
   width: 24px;
+}
+
+@media (max-width: 500px) {
+  .button {
+    padding: 1rem 1rem;
+  }
 }
