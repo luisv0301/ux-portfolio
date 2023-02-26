@@ -9,14 +9,21 @@
   justify-content: center;
   position: relative;
   min-height: 100vh;
+  &__clippy {
+    overflow: hidden;
+    display: block;
+  }
   &__firstLine {
+    font-size: clamp(3.2rem, 9vw + 1rem, 8rem);
     display: inline-block;
   }
   &__secondLine {
+    font-size: clamp(3.2rem, 9vw + 1rem, 8rem);
     display: flex;
     gap: var(--space-x);
+    align-items: flex-start;
     > img {
-      width: clamp(3.5rem, 14vw + 1rem, 8rem);
+      width: clamp(3.2rem, 9vw + 1rem, 8rem);
       height: auto;
       object-fit: contain;
     }
@@ -26,11 +33,11 @@
       max-width: 600px;
     }
     & > h1 {
-      font-size: clamp(3.5rem, 14vw + 1rem, 8rem);
       line-height: 1.1;
       --bg-size: 400%;
       --color-one: #0f172a;
       --color-two: #475569;
+      /*
       background: linear-gradient(
           90deg,
           var(--color-one),
@@ -42,6 +49,7 @@
       background-clip: text;
       -webkit-background-clip: text;
       animation: move-bg 8s infinite linear;
+      */
     }
   }
   &__subtitle {

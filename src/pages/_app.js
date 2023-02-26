@@ -1,29 +1,15 @@
 import "@/styles/globals.css";
 
-import { Poppins } from "@next/font/google";
+import { Poppins, Raleway } from "@next/font/google";
 import localFont from "@next/font/local";
 import Script from "next/script";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
-
-const attila = localFont({
-  src: [
-    {
-      path: "./RoquefortTrial-Strong.woff2",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./RoquefortTrial-Semi-Strong.woff2",
-      weight: "600",
-      style: "normal",
-    },
-  ],
-});
+const raleway = Raleway({ weight: "500", subsets: ["latin"] });
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${attila.className} ${poppins.className}`}>
+    <div className={`${raleway.className} ${poppins.className}`}>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-MESD3M4S50"
         strategy="afterInteractive"
