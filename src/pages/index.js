@@ -114,16 +114,14 @@ export default function Home() {
                 </motion.span>
               </p>
             </div>
-            <div className={styles.header__overflowHidden}>
-              <motion.div
-                className="header__cta"
-                initial={{ y: 200 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.75, delay: 0.15 }}
-              >
-                <Button>Contáctame</Button>
-              </motion.div>
-            </div>
+            <motion.div
+              className="header__cta"
+              initial={{ y: 200 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.75, delay: 0.15 }}
+            >
+              <Button>Contáctame</Button>
+            </motion.div>
           </header>
           <section className={styles.caseStudies}>
             <article>

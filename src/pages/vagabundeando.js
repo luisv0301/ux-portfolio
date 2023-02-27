@@ -395,7 +395,7 @@ export default function vagabundeando() {
                   <h4>Locales</h4>
                   <p>
                     Los elementos de la interfaz se ubicaron donde los usuarios
-                    esperaban encontrarlos, alineando los modelos de mentales de
+                    esperaban encontrarlos, alineando los modelos mentales de
                     estos con el diseño, logrando una interfaz que fuera más
                     intuitiva y fácil de usar. Se mejoró la organización del
                     contenido y se eliminó aquel que no era relevante. Las
