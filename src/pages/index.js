@@ -114,14 +114,8 @@ export default function Home() {
                 </motion.span>
               </p>
             </div>
-            <motion.div
-              className="header__cta"
-              initial={{ y: 200 }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.75, delay: 0.15 }}
-            >
-              <Button>Contáctame</Button>
-            </motion.div>
+
+            <Button>Contáctame</Button>
           </header>
           <section className={styles.caseStudies}>
             <article>
