@@ -27,32 +27,10 @@ export default function App({ Component, pageProps }) {
        gtag('config', 'G-MESD3M4S50'); 
       `}
       </Script>
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => {
-          console.log("working..");
-          if (typeof window !== "undefined") {
-            window.scrollTo({ top: 0 });
-          }
-        }}
-      >
-        <motion.div
-          className={`${raleway.className} ${poppins.className}`}
-          key={router.route}
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          exit={{
-            opacity: 0,
-          }}
-          transition={{ duration: 0.35 }}
-        >
-          <Component {...pageProps} />
-        </motion.div>
-      </AnimatePresence>
+
+      <div className={`${raleway.className} ${poppins.className}`}>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
