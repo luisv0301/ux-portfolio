@@ -3,7 +3,9 @@
   flex-direction: $direction;
   gap: $gap;
 }
-
+.bg {
+  background-color: hsl(215, 19%, 95%);
+}
 .header {
   @include flex($direction: column, $gap: var(--space-l));
   justify-content: center;

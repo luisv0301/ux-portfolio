@@ -142,6 +142,7 @@ export default function Home() {
                 </div>
                 <Link
                   href="/vagabundeando"
+                  scroll={false}
                   className={styles.caseStudies__link}
                 >
                   Ver caso de estudio →
@@ -183,7 +184,11 @@ export default function Home() {
                     Ayudando a las personas a cocinar saludablemente.
                   </motion.p>
                 </div>
-                <Link href="/recipes" className={styles.caseStudies__link}>
+                <Link
+                  href="/recipes"
+                  scroll={false}
+                  className={styles.caseStudies__link}
+                >
                   Ver caso de estudio →
                 </Link>
               </div>

@@ -1,5 +1,4 @@
- 
- @mixin flex($direction: row, $gap: var(--space-xs)) {
+@mixin flex($direction: row, $gap: var(--space-xs)) {
   display: flex;
   flex-direction: $direction;
   gap: $gap;
@@ -7,17 +6,20 @@
 
 %bg-img-properties {
   background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.bg {
+  background-color: hsl(48deg 100% 98%);
+}
 .header {
-  &>h1 {
+  & > h1 {
     font-size: 3.4rem;
     line-height: 1.1;
   }
 
-  &>*:not(:last-child) {
+  & > *:not(:last-child) {
     margin-bottom: var(--space-xl);
   }
 
@@ -90,7 +92,6 @@
   transform: translateX(-30%);
 }
 .usability {
-
   &__findings {
     display: flex;
     flex-wrap: wrap;
@@ -149,10 +150,7 @@
       border-radius: 4px;
     }
   }
-
 }
-
-
 
 .arrowOne {
   right: 0;
@@ -293,7 +291,6 @@
   height: 1rem;
   margin-right: calc(var(--space-xs) / 2);
   background-image: url("../../public/images/misc.png");
- 
 }
 
 @media (max-width: 760px) {

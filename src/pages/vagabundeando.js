@@ -56,6 +56,7 @@ export default function vagabundeando() {
               className={styles.headingLarge}
               initial={{ y: 45, opacity: 0.4 }}
               animate={{ y: 0, opacity: 1 }}
+              id="top"
             >
               Rediseño de Vagabundeando
             </motion.h1>

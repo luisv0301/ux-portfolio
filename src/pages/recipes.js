@@ -64,6 +64,7 @@ export default function recipes() {
             <motion.h1
               initial={{ y: 45, opacity: 0.4 }}
               animate={{ y: 0, opacity: 1 }}
+              id="top"
             >
               Aplicación de recetas
             </motion.h1>
