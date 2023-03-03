@@ -47,7 +47,6 @@ export default function App({ Component, pageProps }) {
           }}
           exit={{
             opacity: 0,
-            y: 75,
           }}
           transition={{ duration: 0.35 }}
         >
