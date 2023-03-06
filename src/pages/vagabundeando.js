@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 
 import Layout from "@/components/Layout";
 import Footer from "@/components/Footer";
@@ -50,6 +51,9 @@ export default function vagabundeando() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.png" />
         </Head>
+        <nav className={styles.nav}>
+          <Link href="/">← Regresar a inicio</Link>
+        </nav>
         <div className="container">
           <header className={styles.header}>
             <motion.h1
@@ -86,9 +90,59 @@ export default function vagabundeando() {
                 <Image src={cover3} />
               </motion.div>
             </div>
+
+            <ul className={styles.tableContent}>
+              <p className={styles.tableContent__title}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+                Tabla de contenidos
+              </p>
+              <li>
+                <Link href="#overview">Overview</Link>
+              </li>
+              <li>
+                <Link href="#problema">Planteamiento de problema</Link>
+              </li>
+              <li>
+                <Link href="#usuarios">Usuarios</Link>
+              </li>
+              <li>
+                <Link href="#rol">Rol</Link>
+              </li>
+              <li>
+                <Link href="#alcance">Alcance y restricciones</Link>
+              </li>
+              <li>
+                <Link href="#proceso">Proceso</Link>
+              </li>
+              <li>
+                <Link href="#resultados">Resultados</Link>
+              </li>
+              <li>
+                <Link href="#aprendido">Lo que aprendí</Link>
+              </li>
+              <li>
+                <Link href="#proximo">Próximos pasos</Link>
+              </li>
+            </ul>
+
             <div className={styles.header__description}>
               <div>
-                <h2 className={styles.header__subtitle}>Overview</h2>
+                <h2 className={styles.header__subtitle} id="overview">
+                  Overview
+                </h2>
                 <p>
                   Vagabundeando es un sitio web que le permite a turistas y
                   locales encontrar información sobre lugares y actividades para
@@ -96,7 +150,7 @@ export default function vagabundeando() {
                 </p>
               </div>
               <div>
-                <h2 className={styles.header__subtitle}>
+                <h2 className={styles.header__subtitle} id="problema">
                   Planteamiento de problema
                 </h2>
                 <p>
@@ -108,7 +162,9 @@ export default function vagabundeando() {
               </div>
 
               <div>
-                <h2 className={styles.header__subtitle}>Usuarios</h2>
+                <h2 className={styles.header__subtitle} id="usuarios">
+                  Usuarios
+                </h2>
                 <p>
                   Mediante entrevistas con el cliente y análisis de analíticas
                   se identificaron 3 grupos principales:
@@ -119,7 +175,7 @@ export default function vagabundeando() {
                     para aprovechar su estadía al máximo.
                   </li>
                   <li>
-                    Locales que quieren conocer nuevos lugares y practicar
+                    Locales que quieren conocer nuevos sitios y practicar
                     actividades interesantes.
                   </li>
                   <li>
@@ -130,7 +186,9 @@ export default function vagabundeando() {
               </div>
 
               <div>
-                <h2 className={styles.header__subtitle}>Rol</h2>
+                <h2 className={styles.header__subtitle} id="rol">
+                  Rol
+                </h2>
                 <p>
                   Diseñador UX/UI (investigación con usuarios, arquitectura de
                   información, wireframe, UI kit y prototipado).
@@ -138,7 +196,7 @@ export default function vagabundeando() {
               </div>
 
               <div>
-                <h2 className={styles.header__subtitle}>
+                <h2 className={styles.header__subtitle} id="alcance">
                   Alcance y restricciones
                 </h2>
                 <p>
@@ -149,7 +207,7 @@ export default function vagabundeando() {
           </header>
           <main className={styles.sections}>
             <section className={styles.articles}>
-              <h2>Proceso</h2>
+              <h2 id="proceso">Proceso</h2>
               <article>
                 <h3>Entendiendo el estado actual</h3>
                 <div className={styles.arrow__container}>
@@ -267,7 +325,7 @@ export default function vagabundeando() {
                             fill="black"
                           />
                         </svg>
-                        Intento buscar un lugar pero no me muestra nada, no se
+                        Intento buscar un lugar, pero no me muestra nada, no sé
                         que hacer”
                       </p>
                     </div>
@@ -333,7 +391,7 @@ export default function vagabundeando() {
                             fill="black"
                           />
                         </svg>
-                        No se donde dar click para continuar”
+                        No sé donde dar clic para continuar”
                       </p>
                     </div>
                   </li>
@@ -371,7 +429,7 @@ export default function vagabundeando() {
               <article>
                 <h3>Aplicando las mejoras</h3>
                 <article>
-                  <h4>Pagina de inicio</h4>
+                  <h4>Página de inicio</h4>
                   <p>
                     Se creó un diseño minimalista eliminando elementos que
                     añadían ruido visual y se mejoró la jerarquía, haciendo uso
@@ -445,7 +503,7 @@ export default function vagabundeando() {
               </article>
             </section>
             <section>
-              <h2>Resultados</h2>
+              <h2 id="resultados">Resultados</h2>
               <ul>
                 <li>
                   Incremento en el tiempo que pasan las personas usuarias en el
@@ -455,7 +513,7 @@ export default function vagabundeando() {
               </ul>
             </section>
             <section>
-              <h2>Lo que aprendí</h2>
+              <h2 id="aprendido">Lo que aprendí</h2>
               <ul>
                 <li>
                   Es importante poder adaptarnos a los requerimientos
@@ -475,13 +533,13 @@ export default function vagabundeando() {
                 </li>
                 <li>
                   Muchos usuarios acceden a sitios web desde sus dispositivos
-                  móviles, por lo que es importante asegurarse de que el sitio
-                  sea accesible y fácil de usar en una variedad de dispositivos.
+                  móviles, por lo que es crucial asegurarse de que el sitio sea
+                  accesible y fácil de utilizar en una variedad de dispositivos.
                 </li>
               </ul>
             </section>
             <section>
-              <h2>Próximos pasos</h2>
+              <h2 id="proximo">Próximos pasos</h2>
               <ul>
                 <li>
                   Conducir un segundo round de pruebas de usabilidad para

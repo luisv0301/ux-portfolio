@@ -9,7 +9,53 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.nav {
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  background: hsla(0, 0%, 100%, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 20;
+  a {
+    color: #475569;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: #a97612;
+    }
+  }
+}
+.tableContent {
+  padding: var(--space-xs);
+  outline: 1px dashed #a97612;
+  outline-offset: 8px;
+  list-style: none;
+  border-radius: var(--border-radius);
 
+  &__title {
+    display: flex;
+    gap: calc(var(--space-xs) / 2);
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: var(--space-xs);
+
+    svg {
+      width: 24px;
+      color: #a97612;
+    }
+  }
+
+  li + li {
+    margin-top: calc(var(--space-xs) / 2);
+  }
+
+  li > a {
+    color: #475569;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: #a97612;
+    }
+  }
+}
 .bg {
   background-color: hsl(48deg 100% 98%);
 }

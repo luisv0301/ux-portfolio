@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 
 import Footer from "@/components/Footer";
@@ -59,6 +61,9 @@ export default function recipes() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.png" />
         </Head>
+        <nav className={styles.nav}>
+          <Link href="/">← Regresar a inicio</Link>
+        </nav>
         <div className={styles.container}>
           <header className={styles.header}>
             <motion.h1
@@ -92,9 +97,56 @@ export default function recipes() {
               </motion.div>
             </div>
 
+            <ul className={styles.tableContent}>
+              <p className={styles.tableContent__title}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                  />
+                </svg>
+                Tabla de contenidos
+              </p>
+              <li>
+                <Link href="#problema">Planteamiento de problema</Link>
+              </li>
+
+              <li>
+                <Link href="#solucion">Solución</Link>
+              </li>
+
+              <li>
+                <Link href="#rol">Rol</Link>
+              </li>
+
+              <li>
+                <Link href="#empatizando">Empatizando</Link>
+              </li>
+              <li>
+                <Link href="#ideacion">Ideación</Link>
+              </li>
+              <li>
+                <Link href="#refinando">Refinando</Link>
+              </li>
+              <li>
+                <Link href="#aprendido">Lo que aprendí</Link>
+              </li>
+              <li>
+                <Link href="#proximo">Próximos pasos</Link>
+              </li>
+            </ul>
+
             <div className={styles.header__description}>
               <div>
-                <h2 className={styles.header__subtitle}>
+                <h2 className={styles.header__subtitle} id="problema">
                   Planteamiento del problema
                 </h2>
                 <p>
@@ -107,7 +159,9 @@ export default function recipes() {
                 </p>
               </div>
               <div>
-                <h2 className={styles.header__subtitle}>Solución</h2>
+                <h2 className={styles.header__subtitle} id="solucion">
+                  Solución
+                </h2>
                 <p>
                   Crear una aplicación que le permita a las personas usuarias
                   encontrar fácilmente recetas que hayan sido previamente
@@ -116,9 +170,11 @@ export default function recipes() {
                 </p>
               </div>
               <div>
-                <h2 className={styles.header__subtitle}>Rol</h2>
+                <h2 className={styles.header__subtitle} id="rol">
+                  Rol
+                </h2>
                 <p>
-                  Disenador UX/UI (investigación con usuarios, arquitectura de
+                  Diseñador UX/UI (investigación con usuarios, arquitectura de
                   información, wireframe, UI kit y prototipado).
                 </p>
               </div>
@@ -135,7 +191,7 @@ export default function recipes() {
           </header>
 
           <section className={styles.section}>
-            <h2 className={styles.icon__heading}>
+            <h2 className={styles.icon__heading} id="empatizando">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,10 +212,10 @@ export default function recipes() {
             <p>
               Antes de empezar a realizar diseños, establecer estilos o crear
               prototipos, es importante conocer realmente el problema para el
-              cual voy a diseñar una solución. por ello, realicé una
+              cual voy a diseñar una solución. Por ello, realicé una
               investigación de tipo exploratoria, específicamente entrevistas
-              semi estructuradas, esto me iba a permitir conocer en profundidad
-              a las personas usuarias, identificar sus motivaciones, objetivos y
+              semiestructuradas, esto me iba a permitir conocer en profundidad a
+              las personas usuarias, identificar sus motivaciones, objetivos y
               necesidades. Los objetivos de mi investigación fueron:
             </p>
             <ul>
@@ -237,7 +293,7 @@ export default function recipes() {
             </article>
           </section>
           <section className={styles.section}>
-            <h2 className={styles.icon__heading}>
+            <h2 className={styles.icon__heading} id="ideacion">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -409,7 +465,7 @@ export default function recipes() {
             </article>
           </section>
           <section className={styles.section}>
-            <h2 className={styles.icon__heading}>
+            <h2 className={styles.icon__heading} id="refinando">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -531,7 +587,7 @@ export default function recipes() {
             </article>
           </section>
           <section>
-            <h2>Lo que aprendí</h2>
+            <h2 id="aprendido">Lo que aprendí</h2>
             <ul>
               <li>
                 Al momento de diseñar es importante conocer cuáles son los
@@ -540,16 +596,16 @@ export default function recipes() {
                 fácil y sencilla.
               </li>
               <li>
-                El diseño visual es importante para crear un producto que sea
-                atractivo, pero no lo es todo, hay otros aspectos que son más
-                importantes, como la funcionalidad y la usabilidad. De nada
-                sirve crear un producto que se vea bien, pero que no logra
+                El diseño visual es valioso para generar un producto que sea
+                atractivo, pero no lo es todo, hay otros aspectos que son
+                fundamentales, como la funcionalidad y la usabilidad. De nada
+                sirve hacer un producto que se vea bien, pero que no logra
                 satisfacer alguna necesidad de las personas usuarias.
               </li>
             </ul>
           </section>
           <section className={styles.nextSteps}>
-            <h2>Proximos pasos</h2>
+            <h2 id="proximo">Próximos pasos</h2>
             <ul>
               <li>
                 Realizar una segunda ronda de pruebas de usabilidad para evaluar
