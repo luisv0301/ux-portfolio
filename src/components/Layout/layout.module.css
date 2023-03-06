@@ -1,5 +1,5 @@
 .layout {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: 0 var(--space-xs) var(--space-x) var(--space-xs);
 }
