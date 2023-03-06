@@ -64,7 +64,7 @@ export default function recipes() {
         <nav className={styles.nav}>
           <Link href="/">← Regresar a inicio</Link>
         </nav>
-        <div className={styles.container}>
+        <div>
           <header className={styles.header}>
             <motion.h1
               initial={{ y: 45, opacity: 0.4 }}
