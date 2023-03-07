@@ -567,8 +567,9 @@ export default function vagabundeando() {
                   áreas de mejora.
                 </li>
                 <li>
-                  Evaluar la accesibilidad para asegurar que el sitio sea fácil
-                  de usar para todos, incluyendo personas con discapacidad.
+                  Evaluar la accesibilidad para asegurar que todas las personas
+                  usuarias puedan acceder a una experiencia de usuario
+                  equivalente.
                 </li>
               </ul>
             </section>
