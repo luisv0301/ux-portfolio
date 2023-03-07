@@ -17,8 +17,14 @@
   backdrop-filter: blur(5px);
   z-index: 20;
   a {
+    display: flex;
+    gap: calc(var(--space-xs) / 2);
+    align-items: center;
     color: #475569;
     transition: color 200ms ease-in-out;
+    svg {
+      width: 24px;
+    }
     &:hover {
       color: hsl(187, 50%, 45%);
     }

@@ -108,6 +108,12 @@
   &__link {
     color: #0f172a;
     position: relative;
+    display: flex;
+    gap: calc(var(--space-xs) / 2);
+    align-items: center;
+    svg {
+      width: 24px;
+    }
     &::before {
       display: inline-block;
       content: "";
