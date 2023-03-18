@@ -261,11 +261,18 @@
 }
 
 @media (max-width: 500px) {
+  .cover {
+    height: 350px;
+  }
   .grid {
     --size: 130px;
   }
   .coverOne {
     left: -142px;
+    bottom: -259px;
+  }
+  .coverTwo {
+    bottom: -279px;
   }
 
   .headingLarge {

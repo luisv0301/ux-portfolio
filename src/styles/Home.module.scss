@@ -96,10 +96,6 @@
     padding-bottom: var(--space-xs);
     flex-wrap: wrap;
   }
-
-  &__description {
-    max-width: 419px;
-  }
   &__title {
     font-size: 44px;
     line-height: 1.1;
@@ -153,6 +149,22 @@
     margin-top: var(--space-xs);
   }
 }
+.section__home {
+  margin-top: 6rem;
+}
+.title__special {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #475569;
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    background-color: #cbd5e1;
+    width: 100%;
+  }
+}
 
 .covers {
   border-radius: var(--border-radius);
@@ -168,5 +180,8 @@
   }
   .header__subtitle {
     font-size: 1.1rem;
+  }
+  .caseStudies {
+    gap: var(--space-x);
   }
 }
