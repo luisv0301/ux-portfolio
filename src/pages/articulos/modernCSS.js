@@ -171,7 +171,7 @@ export default function ModernCSS() {
           <h2>¿Qué es el diseño responsive?</h2>
           <p>
             El diseño responsive es una técnica de diseño web que se enfoca en
-            crear sitios que se puedan adaptar de manera optima a distintos
+            crear sitios que se puedan adaptar de manera óptima a distintos
             tamaños de pantallas y resoluciones, sin sacrificar su funcionalidad
             o usabilidad. En otras palabras, el objetivo es asegurar que los
             usuarios tengan una experiencia óptima al visitar el sitio,
@@ -236,7 +236,7 @@ export default function ModernCSS() {
             {htmlCode}
           </SyntaxHighlighter>
           <p>
-            En el padre usaremos <code>display: flex</code> y un pequeno gap
+            En el padre usaremos <code>display: flex</code> y un pequeño gap
             entre los elementos.
           </p>
           <SyntaxHighlighter
@@ -246,12 +246,12 @@ export default function ModernCSS() {
     display: flex;
     gap: 1rem;
   }`}</SyntaxHighlighter>
-          <p>Se veria de esta manera.</p>
+          <p>Se vería de esta manera.</p>
           <Image src={flex} />
           <p>
             Ahora con <code>flex-wrap: wrap</code>, los elementos flexibles
             (hijos del elemento con la propiedad flex) van a poder ajustarse a
-            varias lineas.
+            varias líneas.
           </p>
           <SyntaxHighlighter
             language="css"
@@ -261,7 +261,7 @@ export default function ModernCSS() {
           </SyntaxHighlighter>
           <Image src={flexWrap} />
           <p>
-            Como has notado la imagen ha saltado a la siguente linea ubicandose
+            Como has notado la imagen ha saltado a la siguiente línea ubicándose
             debajo del texto, ahora necesitamos controlar cuando ocurre ese
             salto. Para esto podemos usar la propiedad <code>flex-basis</code>.
           </p>
@@ -276,13 +276,13 @@ export default function ModernCSS() {
             Estamos indicando al navegador que el ancho base para cada elemento
             flexible es de 500px, si no hay suficiente espacio en esa línea para
             mantener a los dos elementos con un ancho de 500px cada uno,
-            ajustalos a la siguiente línea. Podemos pensar en el valor de{" "}
+            ajústalos a la siguiente línea. Podemos pensar en el valor de{" "}
             <code>flex-basis</code> como un breakpoint.
           </p>
-          <p>Este seria el resultado.</p>
+          <p>Este sería el resultado.</p>
           <Image src={flexGif} />
           <p>
-            Puedes ver que aunque hayamos etablecido 500px como ancho base para
+            Puedes ver que aunque hayamos establecido 500px como ancho base para
             los elementos, se estiran hasta llenar cualquier espacio vacío que
             tenga el contenedor, esto ocurre porque hemos establecido{" "}
             <code>flex-grow: 1</code>.
@@ -382,9 +382,9 @@ export default function ModernCSS() {
             <code>auto-fit</code> las columnas se van a expandir tanto como se
             necesite para adaptarse al tamaño de la fila, mientras que con{" "}
             <code>auto-fill</code> si en la fila hay espacio suficiente para
-            agregar una nueva columna se agregará sin importar que esta este
-            vacía. La elección de una u otra dependerá del resultado que quieras
-            lograr.
+            agregar una nueva columna se agregará sin importar que está se
+            encuentre vacía. La elección de una u otra dependerá del resultado
+            que quieras lograr.
           </p>
           <h2>Algo no esta bien</h2>
           <p>
@@ -396,8 +396,8 @@ export default function ModernCSS() {
             Cuando el viewport es menor a 378px, ocurre un overflow, ya que
             hemos definido que el tamaño mínimo para la columna es 378px, aquí
             es donde entra la función <code>min()</code> al rescate, esta recibe
-            recibe una lista de valores y establece el menor, como su valor. Sí
-            la agregamos a queda de esta manera.
+            una lista de valores y establece el menor, como su valor. Si la
+            agregamos queda de esta manera.
           </p>
           <SyntaxHighlighter
             language="css"
@@ -446,7 +446,7 @@ export default function ModernCSS() {
             el elemento horizontalmente. Esto da un efecto de padding de 1rem a
             ambos lados del elemento. Bastante genial.
           </p>
-          <p>Con la siguente ilustración puedes entenderlo mucho mejor.</p>
+          <p>Con la siguiente ilustración puedes entenderlo mucho mejor.</p>
           <Image src={minFunc} />
 
           <h2>Fluidez con límites</h2>
@@ -456,8 +456,8 @@ export default function ModernCSS() {
             resultar tedioso y poco natural, con cambios bruscos entre los
             diferentes breakpoints que establecemos. ¿No sería mejor crear un
             tamaño de fuente que sea fluido, que cambie su tamaño de acuerdo al
-            viewport pero sin salirse de unos límites predefinidos? Te lo tengo!
-            para ello, vamos a usar <code>clamp()</code>.
+            viewport pero sin salirse de unos límites predefinidos? Te lo
+            tengo!, para ello, vamos a usar <code>clamp()</code>.
           </p>
           <SyntaxHighlighter
             language="css"
@@ -481,14 +481,14 @@ h3 {
           </p>
           <Image src={typo} />
           <p>
-            Ahora el tamaño de las letras se ajustan automáticamente sin salirse
-            de los limites que hemos definido como valor minimo y maximo.
-            Perfecto!
+            Ahora el tamaño de las letras se ajusta automáticamente sin salirse
+            de los límites que hemos definido como valor mínimo y máximo.
+            ¡Perfecto!
           </p>
           <p>
             Es importante destacar que al establecer el valor preferido con
             unidades de viewport, debemos combinarlo con una unidad relativa
-            como rem. De lo contrario, el usuario no podrá realizar zoom para
+            como rem. De lo contrario, el usuario no podrá realizar zum para
             aumentar el tamaño de la fuente. Por ello, recomiendo siempre hacer
             pruebas para identificar posibles problemas de accesibilidad.
           </p>
@@ -508,8 +508,8 @@ h3 {
             varias media queries. Con esto no quiero decir que usar media
             queries esté mal, no, estas siguen siendo bastante útiles, y al
             combinarlas con las técnicas que hemos discutido nos facilitan
-            bastante la implementación de diseños responsives, logrando un
-            código CSS más eficiente y escalable.
+            bastante la implementación de diseños responsive, logrando un código
+            CSS más eficiente y escalable.
           </p>
           <p>
             Espero que este artículo te haya sido de utilidad, y ahora tengas
