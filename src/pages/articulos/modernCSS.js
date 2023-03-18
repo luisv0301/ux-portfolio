@@ -73,12 +73,7 @@ export default function ModernCSS() {
           <title>Diseño responsive con CSS moderno</title>
           <meta
             name="description"
-            content="Si eres diseñador web o desarrollador frontend, seguramente
-                    estás familiarizado con la importancia de las media queries
-                    para crear diseños responsive. Sin embargo, con los avances
-                    y mejoras que ha tenido CSS en los últimos años, hay otras
-                    técnicas disponibles que pueden simplificar y mejorar la
-                    implementación de diseños."
+            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
           />
           <meta
             name="keywords"
@@ -100,12 +95,7 @@ export default function ModernCSS() {
           />
           <meta
             property="og:description"
-            content="Si eres diseñador web o desarrollador frontend, seguramente
-            estás familiarizado con la importancia de las media queries
-            para crear diseños responsive. Sin embargo, con los avances
-            y mejoras que ha tenido CSS en los últimos años, hay otras
-            técnicas disponibles que pueden simplificar y mejorar la
-            implementación de diseños."
+            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
           />
           <meta
             property="og:image"
@@ -126,12 +116,7 @@ export default function ModernCSS() {
           />
           <meta
             name="twitter:description"
-            content="Si eres diseñador web o desarrollador frontend, seguramente
-            estás familiarizado con la importancia de las media queries
-            para crear diseños responsive. Sin embargo, con los avances
-            y mejoras que ha tenido CSS en los últimos años, hay otras
-            técnicas disponibles que pueden simplificar y mejorar la
-            implementación de diseños."
+            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
           />
           <meta
             name="twitter:image"
