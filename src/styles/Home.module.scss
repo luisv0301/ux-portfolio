@@ -22,16 +22,16 @@
     display: block;
   }
   &__firstLine {
-    font-size: clamp(3.2rem, 9vw + 1rem, 8rem);
+    font-size: clamp(3.2rem, 9vw + 1rem, 7.2rem);
     display: inline-block;
   }
   &__secondLine {
-    font-size: clamp(3.2rem, 9vw + 1rem, 8rem);
+    font-size: clamp(3.2rem, 9vw + 1rem, 7.2rem);
     display: flex;
     gap: var(--space-x);
     align-items: flex-start;
     > img {
-      width: clamp(3.2rem, 9vw + 1rem, 8rem);
+      width: clamp(3.2rem, 9vw + 1rem, 7.2rem);
       height: auto;
       object-fit: contain;
     }
@@ -153,6 +153,7 @@
   margin-top: 6rem;
 }
 .title__special {
+  font-family: var(--poppins-font);
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 500;

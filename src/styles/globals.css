@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--poppins-font);
   font-weight: 400;
   color: #475569;
 }
@@ -61,15 +61,16 @@ h3,
 h4,
 h5 {
   color: #0f172a;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--lora-font);
   font-weight: 500;
 }
 
 p,
 ul,
 button,
-a {
-  font-family: "Poppins", sans-serif;
+a,
+li {
+  font-family: var(--poppins-font);
   font-weight: 400;
 }
 h1 {

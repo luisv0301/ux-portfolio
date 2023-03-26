@@ -163,6 +163,8 @@ export default function ModernCSS() {
             componentes que deben cambiar constantemente con el tamaño de la
             pantalla, tendrías que escribir múltiples media queries, esto
             generaría un código CSS complejo y difícil de mantener.
+          </p>
+          <p>
             Afortunadamente, CSS ha evolucionado enormemente en los últimos
             años, incorporando nuevas características y mejoras que nos
             facilitan la implementación de diseños responsive. En este artículo,
