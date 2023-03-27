@@ -167,13 +167,14 @@ export default function vagabundeando() {
               </div>
               <div>
                 <h2 className={styles.header__subtitle} id="problema">
-                  Planteamiento de problema
+                  Planteamiento del problema
                 </h2>
                 <p>
                   Actualmente, las personas usuarias estaban llegando al sitio
-                  web a través de diferentes canales, pero el tiempo de
-                  permanencia en la página era muy bajo. Esto estaba afectando
-                  negativamente los ingresos del negocio.
+                  web a través de diferentes canales, como motores de búsqueda,
+                  publicidad en línea, redes sociales y referencias de otros
+                  sitios web, pero el engagement con el sitio era muy bajo. Esto
+                  estaba afectando negativamente los ingresos del negocio.
                 </p>
               </div>
 
@@ -298,8 +299,8 @@ export default function vagabundeando() {
                   usabilidad que pudieran estar presentes. Algunos de los
                   problemas encontrados fueron: excesivos tiempos de carga,
                   falta de organización y jerarquía del contenido, navegación
-                  confusa, pobre accesibilidad, inconsistencias de elementos,
-                  pobre manejo de errores.
+                  confusa, problemas de accesibilidad, inconsistencias de
+                  elementos y pobre manejo de errores.
                 </p>
               </article>
               <article>
@@ -307,8 +308,8 @@ export default function vagabundeando() {
                 <p>
                   La etapa previa me había ayudado a identificar algunos
                   problemas de usabilidad, ahora era importante saber si las
-                  personas usuarias podrían lograr sus objetivos al hacer uso
-                  del sitio web, para ello realicé una prueba de usabilidad en
+                  personas usuarias podian lograr sus objetivos al hacer uso del
+                  sitio web, para ello realicé una prueba de usabilidad en
                   remoto, no moderada, con 7 usuarios representativos. Algunos
                   hallazgos fueron:
                 </p>
@@ -470,9 +471,9 @@ export default function vagabundeando() {
                   <h4>Locales</h4>
                   <p>
                     Los elementos de la interfaz se ubicaron donde los usuarios
-                    esperaban encontrarlos, alineando los modelos mentales de
-                    estos con el diseño, logrando una interfaz que fuera más
-                    intuitiva y fácil de usar. Se mejoró la organización del
+                    esperaban encontrarlos, alineando el diseño con los modelos
+                    mentales de los usuarios, logrando una interfaz que fuera
+                    más intuitiva y fácil de usar. Se mejoró la organización del
                     contenido y se eliminó aquel que no era relevante. Las
                     acciones más importantes como los botones se destacaron y se
                     mejoró su affordance.
