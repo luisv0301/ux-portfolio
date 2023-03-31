@@ -15,7 +15,7 @@ export default function Home() {
   const constraintsRef = useRef(null);
 
   return (
-    <>
+    <div>
       <motion.div className={styles.header__container} ref={constraintsRef}>
         <header className={styles.header}>
           <motion.div
@@ -81,7 +81,6 @@ export default function Home() {
               </motion.span>
             </p>
           </div>
-
           <Button>Contáctame</Button>
         </header>
         <motion.div
@@ -154,7 +153,6 @@ export default function Home() {
           </p>
         </motion.div>
       </motion.div>
-
       <Layout>
         <Head>
           <title>Luis Vásquez portafolio</title>
@@ -396,6 +394,6 @@ export default function Home() {
         </div>
       </Layout>
       <Footer />
-    </>
+    </div>
   );
 }
