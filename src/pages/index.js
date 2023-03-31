@@ -7,10 +7,154 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
+import { useRef } from "react";
+
+import character from "../../public/images/frame.svg";
 
 export default function Home() {
+  const constraintsRef = useRef(null);
+
   return (
     <>
+      <motion.div className={styles.header__container} ref={constraintsRef}>
+        <header className={styles.header}>
+          <motion.div
+            className={`${styles.squarePhoto__hidden}`}
+            drag
+            whileDrag={{
+              scale: 1.2,
+            }}
+            dragConstraints={constraintsRef}
+            dragMomentum={false}
+          >
+            <Image src={character} className={styles.covers} />
+          </motion.div>
+          <div className={styles.header__text}>
+            <p className={styles.header__overflowHidden}>
+              <motion.span
+                className={styles.header__subtitle}
+                initial={{ y: 150 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.75, delay: 0.15 }}
+              >
+                Luis Vásquez
+              </motion.span>
+            </p>
+            <h1>
+              <span className={styles.header__clippy}>
+                <motion.span
+                  className={styles.header__firstLine}
+                  initial={{ y: 150 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.75, delay: 0.15 }}
+                >
+                  DISEÑADOR
+                </motion.span>
+              </span>
+              <span className={styles.header__clippy}>
+                <motion.span
+                  className={styles.header__secondLine}
+                  initial={{ y: 150 }}
+                  animate={{ y: 0 }}
+                  transition={{ duration: 0.75, delay: 0.15 }}
+                >
+                  UX
+                  <motion.img
+                    src="/images/hand.png"
+                    alt=""
+                    animate={{ rotateZ: [null, -20, 20, 0] }}
+                    transition={{ delay: 1.25 }}
+                  />
+                </motion.span>
+              </span>
+            </h1>
+            <p className={styles.header__overflowHidden}>
+              <motion.span
+                initial={{ y: 150 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.75, delay: 0.15 }}
+              >
+                Soluciones creativas a problemas complejos. Actualmente
+                trabajando para una agencia de desarrollo de software. En mi
+                tiempo libre me gusta jugar con CSS, si, con CSS. ¿Tienes algún
+                proyecto en mente? Déjame un mensaje.
+              </motion.span>
+            </p>
+          </div>
+
+          <Button>Contáctame</Button>
+        </header>
+        <motion.div
+          className={styles.squarePhoto}
+          drag
+          whileDrag={{
+            scale: 1.2,
+          }}
+          dragConstraints={constraintsRef}
+          dragMomentum={false}
+        >
+          <Image src={character} className={styles.covers} />
+        </motion.div>
+
+        <motion.div
+          className={`${styles.stickyNote} ${styles.stickyNote__violet}`}
+          drag
+          whileDrag={{
+            scale: 1.2,
+            boxShadow:
+              "29px 71px 31px rgba(0, 0, 0, 0.02), 16px 40px 26px rgba(0, 0, 0, 0.06), 7px 18px 19px rgba(0, 0, 0, 0.1), 2px 4px 11px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.12)",
+          }}
+          dragConstraints={constraintsRef}
+          dragMomentum={false}
+        >
+          <p>"No asumas nada, prueba todo"</p>
+        </motion.div>
+
+        <motion.div
+          className={`${styles.stickyNote} ${styles.stickyNote__red}`}
+          drag
+          whileDrag={{
+            scale: 1.2,
+            boxShadow:
+              "29px 71px 31px rgba(0, 0, 0, 0.02), 16px 40px 26px rgba(0, 0, 0, 0.06), 7px 18px 19px rgba(0, 0, 0, 0.1), 2px 4px 11px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.12)",
+          }}
+          dragConstraints={constraintsRef}
+          dragMomentum={false}
+        >
+          <p>"Hazlo fácil de usar"</p>
+        </motion.div>
+
+        <motion.div
+          className={`${styles.stickyNote} ${styles.stickyNote__blue}`}
+          drag
+          whileDrag={{
+            scale: 1.2,
+            boxShadow:
+              "29px 71px 31px rgba(0, 0, 0, 0.02), 16px 40px 26px rgba(0, 0, 0, 0.06), 7px 18px 19px rgba(0, 0, 0, 0.1), 2px 4px 11px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.12)",
+          }}
+          dragConstraints={constraintsRef}
+          dragMomentum={false}
+        >
+          <p>"Hazlo accesible para todos"</p>
+        </motion.div>
+        <motion.div
+          className={`${styles.stickyNote} ${styles.stickyNote__morad}`}
+          drag
+          whileDrag={{
+            scale: 1.2,
+            boxShadow:
+              "29px 71px 31px rgba(0, 0, 0, 0.02), 16px 40px 26px rgba(0, 0, 0, 0.06), 7px 18px 19px rgba(0, 0, 0, 0.1), 2px 4px 11px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.12)",
+          }}
+          dragConstraints={constraintsRef}
+          dragMomentum={false}
+        >
+          <p>
+            "Los buenos diseños comienzan con una comprensión profunda del
+            usuario"
+          </p>
+        </motion.div>
+      </motion.div>
+
       <Layout>
         <Head>
           <title>Luis Vásquez portafolio</title>
@@ -60,62 +204,6 @@ export default function Home() {
           <link rel="icon" href="/favicon.png" />
         </Head>
         <div>
-          <header className={styles.header}>
-            <div className={styles.header__text}>
-              <p className={styles.header__overflowHidden}>
-                <motion.span
-                  className={styles.header__subtitle}
-                  initial={{ y: 150 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.75, delay: 0.15 }}
-                >
-                  Luis Vásquez
-                </motion.span>
-              </p>
-              <h1>
-                <span className={styles.header__clippy}>
-                  <motion.span
-                    className={styles.header__firstLine}
-                    initial={{ y: 150 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.75, delay: 0.15 }}
-                  >
-                    DISEÑADOR
-                  </motion.span>
-                </span>
-                <span className={styles.header__clippy}>
-                  <motion.span
-                    className={styles.header__secondLine}
-                    initial={{ y: 150 }}
-                    animate={{ y: 0 }}
-                    transition={{ duration: 0.75, delay: 0.15 }}
-                  >
-                    UX
-                    <motion.img
-                      src="/images/hand.png"
-                      alt=""
-                      animate={{ rotateZ: [null, -20, 20, 0] }}
-                      transition={{ delay: 1.25 }}
-                    />
-                  </motion.span>
-                </span>
-              </h1>
-              <p className={styles.header__overflowHidden}>
-                <motion.span
-                  initial={{ y: 150 }}
-                  animate={{ y: 0 }}
-                  transition={{ duration: 0.75, delay: 0.15 }}
-                >
-                  Soluciones creativas a problemas complejos. Actualmente
-                  trabajando para una agencia de desarrollo de software. En mi
-                  tiempo libre me gusta jugar con CSS, si, con CSS. ¿Tienes
-                  algún proyecto en mente? Déjame un mensaje.
-                </motion.span>
-              </p>
-            </div>
-
-            <Button>Contáctame</Button>
-          </header>
           <section>
             <h2 className={styles.title__special}>Proyectos</h2>
             <div className={styles.caseStudies}>

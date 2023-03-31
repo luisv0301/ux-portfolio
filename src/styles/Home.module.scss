@@ -10,7 +10,19 @@
   @include flex($direction: column, $gap: var(--space-l));
   justify-content: center;
   position: relative;
-  min-height: 100vh;
+  padding: 1rem;
+
+  &__container {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: #fef8dc;
+    background-image: url("../../public/images/square.svg");
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
   &__overflowHidden {
     overflow: hidden;
     & > span {
@@ -22,16 +34,16 @@
     display: block;
   }
   &__firstLine {
-    font-size: clamp(3.2rem, 9vw + 1rem, 7.2rem);
+    font-size: clamp(2.8rem, 9vw + 1rem, 7.2rem);
     display: inline-block;
   }
   &__secondLine {
-    font-size: clamp(3.2rem, 9vw + 1rem, 7.2rem);
+    font-size: clamp(2.8rem, 9vw + 1rem, 7.2rem);
     display: flex;
     gap: var(--space-x);
     align-items: flex-start;
     > img {
-      width: clamp(3.2rem, 9vw + 1rem, 7.2rem);
+      width: clamp(2.6rem, 9vw + 1rem, 7.2rem);
       height: auto;
       object-fit: contain;
     }
@@ -42,6 +54,7 @@
     }
     & > h1 {
       line-height: 1.1;
+      color: #4b2407;
       --bg-size: 400%;
       --color-one: #0f172a;
       --color-two: #475569;
@@ -173,6 +186,92 @@
 
 .mt__reset {
   margin-top: 0;
+}
+.squarePhoto {
+  position: absolute;
+  top: 4%;
+  left: 25px;
+  border: 8px;
+
+  /*
+  border-width: 15px;
+  border-style: solid;
+  border-color: hsl(21 92% 20% / 1) #92400e #7c2d12 #92400e;
+  background-image: linear-gradient(#e5e4df00, #cdcdc68f);
+  */
+
+  overflow: hidden;
+  &__hidden {
+    display: none;
+    z-index: 50;
+    position: relative;
+    width: fit-content;
+  }
+  img {
+    pointer-events: none;
+    width: 215px;
+    border-radius: 0;
+  }
+}
+.stickyNote {
+  width: 12rem;
+  overflow: hidden;
+  font-family: inherit;
+  color: #6b7280;
+  padding: 1rem;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 0 0 100px 0/50px 100px 12px;
+  box-shadow: 10px 19px 9px rgba(0, 0, 0, 0.01),
+    6px 11px 7px rgba(0, 0, 0, 0.05), 3px 5px 5px rgba(0, 0, 0, 0.09),
+    1px 1px 3px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    box-shadow: -2px -1px 2px rgba(0, 0, 0, 0.3),
+      -3px 3px 5px rgba(0, 0, 0, 0.3);
+    right: 20px;
+    bottom: 0px;
+    transform: skew(-75deg, 30deg) rotate(-10deg);
+  }
+  &__violet {
+    background-color: #a5b4fc;
+    bottom: 16%;
+    right: 25px;
+  }
+  &__red {
+    background-color: #fda4af;
+    bottom: 12%;
+    right: 50px;
+  }
+  &__blue {
+    background-color: #86efac;
+    bottom: 8%;
+    right: 75px;
+  }
+  &__morad {
+    background: #d8b4fe;
+    bottom: 4%;
+    right: 100px;
+  }
+}
+@media (max-width: 980px) {
+  .stickyNote {
+    display: none;
+  }
+  .squarePhoto {
+    display: none;
+  }
+  .squarePhoto__hidden {
+    display: block;
+    img {
+      border-radius: 0;
+      width: clamp(100px, 6vw + 1rem, 220px);
+    }
+  }
 }
 
 @media (max-width: 500px) {
