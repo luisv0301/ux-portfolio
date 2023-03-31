@@ -165,7 +165,7 @@ export default function Home() {
           <meta name="author" content="Luis Vásquez" />
           <meta
             property="og:image"
-            content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
+            content="https://i.ibb.co/vH2VLdM/Frame-86.png"
           />
           <meta
             property="og:url"
@@ -179,7 +179,7 @@ export default function Home() {
           />
           <meta
             property="og:image"
-            content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
+            content="https://i.ibb.co/vH2VLdM/Frame-86.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
@@ -197,7 +197,7 @@ export default function Home() {
           />
           <meta
             name="twitter:image"
-            content="https://i.ibb.co/gzbNbL5/og-img-gray.png"
+            content="https://i.ibb.co/vH2VLdM/Frame-86.png"
           />
           <link rel="icon" href="/favicon.png" />
         </Head>
