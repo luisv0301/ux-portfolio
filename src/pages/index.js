@@ -9,7 +9,7 @@ import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import { useRef } from "react";
 
-import character from "../../public/images/frame.svg";
+import character from "../../public/images/square-try.png";
 
 export default function Home() {
   const constraintsRef = useRef(null);
