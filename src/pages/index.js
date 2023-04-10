@@ -74,10 +74,22 @@ export default function Home() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.75, delay: 0.15 }}
               >
-                Soluciones creativas a problemas complejos. Actualmente
-                trabajando para una agencia de desarrollo de software. En mi
-                tiempo libre me gusta jugar con CSS, si, con CSS. ¿Tienes algún
-                proyecto en mente? Déjame un mensaje.
+                <b>Soluciones creativas enfocadas en los usuarios.</b>{" "}
+                Actualmente trabajando para una agencia de desarrollo de
+                software. Ayudo a startups y medianos/pequeños negocios a
+                potenciar su presencia digital.
+              </motion.span>
+            </p>
+
+            <p className={styles.header__overflowHidden}>
+              <motion.span
+                initial={{ y: 150 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.75, delay: 0.15 }}
+              >
+                En mi tiempo libre estoy leyendo algún libro, caminado por la
+                playa o jugando con CSS, sí, con CSS. ¿Tienes algún proyecto en
+                mente?
               </motion.span>
             </p>
           </div>
