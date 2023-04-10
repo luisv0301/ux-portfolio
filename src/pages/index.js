@@ -74,7 +74,7 @@ export default function Home() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.75, delay: 0.15 }}
               >
-                <b>Soluciones creativas enfocadas en los usuarios.</b>{" "}
+                <b>Soluciones creativas enfocadas en las personas.</b>{" "}
                 Actualmente trabajando para una agencia de desarrollo de
                 software. Ayudo a startups y medianos/pequeños negocios a
                 potenciar su presencia digital.
