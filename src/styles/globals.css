@@ -49,6 +49,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  font-size: 1rem;
   line-height: 1.5;
   font-family: var(--poppins-font);
   font-weight: 400;
@@ -163,5 +164,11 @@ select {
   }
   h3 {
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.88rem;
   }
 }
