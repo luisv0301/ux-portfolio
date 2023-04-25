@@ -75,11 +75,23 @@
     margin-bottom: var(--space-xl);
   }
 
+  &__pin {
+    position: absolute;
+    top: -3rem;
+    right: 0rem;
+    width: 80px;
+  }
+
   &__description {
     @extend %bg-img-properties;
     @include flex($direction: column, $gap: var(--space-l));
+    position: relative;
     background-color: #fffceb;
-    background-image: url("../../public/images/cover-noise.png");
+    background-image: url("../../public/images/square-recipe.png");
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: 24px;
     padding: var(--space-m);
     border-radius: var(--border-radius);
     outline: 1px dashed #a97612;
@@ -372,5 +384,8 @@
   }
   .coverTwo {
     height: 250px;
+  }
+  .header__pin {
+    width: 58px;
   }
 }

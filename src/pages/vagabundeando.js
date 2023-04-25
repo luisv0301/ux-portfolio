@@ -23,6 +23,7 @@ import vaga3 from "../../public/images/vaga-3.png";
 import vaga4 from "../../public/images/vaga-4.png";
 import vaga5 from "../../public/images/vaga-5.png";
 import vaga6 from "../../public/images/vaga-6.png";
+import pin from "../../public/images/pin.png";
 
 import competidores from "../../public/images/competidores.png";
 
@@ -78,7 +79,7 @@ export default function vagabundeando() {
               animate={{ y: 0, opacity: 1 }}
               id="top"
             >
-              Rediseño de Vagabundeando
+              Vagabundeando
             </motion.h1>
             <div className={styles.cover}>
               <motion.div
@@ -155,6 +156,7 @@ export default function vagabundeando() {
             </ul>
 
             <div className={styles.header__description}>
+              <Image src={pin} alt="" className={styles.header__pin} />
               <div>
                 <h2 className={styles.header__subtitle} id="overview">
                   Overview

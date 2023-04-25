@@ -125,6 +125,13 @@ export default function Home() {
                 d="M10 10h780v780H10z"
                 className={styles.frameBg}
               />
+              <image
+                x="0"
+                y="0"
+                width="801"
+                height="801"
+                xlinkHref="https://i.ibb.co/PrYtJzX/frame-2-1.png"
+              />
               <g id="&lt;Group&gt;">
                 <path
                   id="&lt;Path&gt;"
@@ -1054,7 +1061,7 @@ export default function Home() {
                   </motion.p>
                 </div>
                 <Link
-                  href="/articulos/modernCSS"
+                  href="/articulos/modern-css"
                   className={styles.caseStudies__link}
                   aria-label="Leer diseño responsivo con CSS moderno"
                 >

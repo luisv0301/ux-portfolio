@@ -35,6 +35,7 @@ import final5 from "../../public/images/final5.png";
 import final6 from "../../public/images/final6.png";
 import final7 from "../../public/images/final7.png";
 import final8 from "../../public/images/final8.png";
+import pin from "../../public/images/pin.png";
 
 const container = {
   hidden: { opacity: 0 },
@@ -87,7 +88,7 @@ export default function recipes() {
               animate={{ y: 0, opacity: 1 }}
               id="top"
             >
-              Aplicación de recetas
+              EatWell
             </motion.h1>
             <div className={styles.cover__img}>
               <motion.div
@@ -161,6 +162,7 @@ export default function recipes() {
             </ul>
 
             <div className={styles.header__description}>
+              <Image src={pin} alt="" className={styles.header__pin} />
               <div>
                 <h2 className={styles.header__subtitle} id="problema">
                   Planteamiento del problema

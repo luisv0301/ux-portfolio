@@ -128,15 +128,28 @@
 }
 
 .header__description {
+  position: relative;
   @extend %bg-img-properties;
   @include flex($direction: column, $gap: var(--space-l));
-  background-image: url("../../public/images/blue-noise.png");
+  //background-image: url("../../public/images/blue-noise.png");
+
+  background-image: url("../../public/images/square-vagabundeando-variation.png");
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: 24px;
   padding: var(--space-m);
   border-radius: var(--border-radius);
   outline: 1px dashed #66c0cc;
   outline-offset: 8px;
 }
 
+.header__pin {
+  position: absolute;
+  top: -3rem;
+  right: 0rem;
+  width: 80px;
+}
 .header > * {
   margin-bottom: var(--space-xl);
 }
@@ -278,5 +291,9 @@
   .headingLarge {
     font-size: 2.5rem;
     line-height: 1.1;
+  }
+
+  .header__pin {
+    width: 58px;
   }
 }
