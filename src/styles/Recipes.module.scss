@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
 }
 .nav {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
   position: sticky;
   top: 0;
   padding: 1rem 0;
@@ -31,6 +34,7 @@
   }
 }
 .tableContent {
+  display: none;
   padding: var(--space-xs);
   outline: 1px dashed #a97612;
   outline-offset: 8px;
@@ -66,9 +70,10 @@
   background-color: hsl(48deg 100% 98%);
 }
 .header {
-  & > h1 {
+  &__headingLarge {
     font-size: 3.4rem;
     line-height: 1.1;
+    margin-bottom: var(--space-x);
   }
 
   & > *:not(:last-child) {
@@ -80,6 +85,18 @@
     top: -3rem;
     right: 0rem;
     width: 80px;
+  }
+
+  &__coverEdit {
+    text-align: center;
+    background-color: #fffceb;
+    margin-bottom: var(--space-xl);
+    padding-top: var(--space-x);
+  }
+
+  &__coverEditInner {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   &__description {
@@ -121,14 +138,9 @@
 .cover__img {
   @extend %bg-img-properties;
   width: 100%;
-  height: 462px;
-  background-color: #fffceb;
-  background-image: url("../../public/images/cover-noise.png");
+  height: 550px;
   position: relative;
   overflow: hidden;
-  border-radius: var(--border-radius);
-  outline: 1px dashed #a97612;
-  outline-offset: 6px;
 }
 
 .one {
@@ -374,7 +386,7 @@
   .grid {
     --size: 130px;
   }
-  .header > h1 {
+  .header__headingLarge {
     font-size: 2.5rem;
     line-height: 1.1;
   }
@@ -386,6 +398,7 @@
     height: 250px;
   }
   .header__pin {
-    width: 58px;
+    width: 42px;
+    top: -2rem;
   }
 }

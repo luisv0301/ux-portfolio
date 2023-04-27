@@ -1,5 +1,5 @@
 .nav {
-  position: sticky;
+  display: none;
   top: 0;
   padding: 1rem 0;
   background: hsla(0, 0%, 100%, 0.6);
@@ -44,6 +44,7 @@
   }
 }
 .title {
+  margin-top: var(--space-x);
   font-size: 3.4rem;
   line-height: 1;
 }

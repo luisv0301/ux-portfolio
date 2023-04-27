@@ -10,6 +10,9 @@ import Footer from "@/components/Footer";
 import { useRef } from "react";
 
 import character from "../../public/images/square-try.png";
+import eatwell from "../../public/images/eatwell-new.png";
+import vagabundeando from "../../public/images/vagabundando-well.png";
+import tpago from "../../public/images/mercantil-new.png";
 
 export default function Home() {
   const constraintsRef = useRef(null);
@@ -964,7 +967,7 @@ export default function Home() {
                   transition={{ duration: 0.65 }}
                 >
                   <Image
-                    src="/images/vagabundeando.png"
+                    src={vagabundeando}
                     height={379}
                     width={1039}
                     className={styles.covers}
@@ -989,12 +992,8 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.45 }}
                     >
-                      Aplicación de recetas saludables donde las personas
-                      usuarias pueden fácilmente encontrar opciones evaluadas
-                      por profesionales de la salud y personalizadas a sus
-                      preferencias. Además, pueden marcar recetas favoritas,
-                      crear listas de compras y compartir sus experiencias con
-                      la comunidad.
+                      Facilitando el accesso a recetas de comida sencillas,
+                      personalizadas y saludables.
                     </motion.p>
                   </div>
                   <Link href="/recipes" className={styles.caseStudies__link}>
@@ -1023,7 +1022,63 @@ export default function Home() {
                   transition={{ duration: 0.65 }}
                 >
                   <Image
-                    src="/images/recipes.png"
+                    src={eatwell}
+                    height={379}
+                    width={1039}
+                    className={styles.covers}
+                  />
+                </motion.div>
+              </article>
+
+              <article className={styles.mt__reset}>
+                <div className={styles.caseStudies__container}>
+                  <div className={styles.caseStudies__description}>
+                    <motion.h3
+                      className={styles.caseStudies__title}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      Tpago
+                    </motion.h3>
+                    <motion.p
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      Haciendo la aplicación de pagos electrónicos más usada en
+                      Venezuela más fácil de usar y accesible.
+                    </motion.p>
+                  </div>
+                  <Link href="/mercantil" className={styles.caseStudies__link}>
+                    Ver caso de estudio{" "}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+                <motion.div
+                  className={styles.caseStudies__img}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.65 }}
+                >
+                  <Image
+                    src={tpago}
                     height={379}
                     width={1039}
                     className={styles.covers}
