@@ -250,18 +250,13 @@
 
 .video__gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: var(--space-x);
   margin-top: var(--space-m);
 }
 .img__presentation {
   border-radius: var(--border-radius);
   background-color: #fefbd7;
-  &:nth-child(1),
-  &:nth-child(4),
-  &:nth-child(5) {
-    grid-column: 1/-1;
-  }
   &:nth-child(3) {
     @extend %bg-img-properties;
     background-image: url("../../public/images/colegio-bg.png");
