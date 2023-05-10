@@ -13,6 +13,7 @@ import character from "../../public/images/square-try.png";
 import eatwell from "../../public/images/eatwell-new.png";
 import vagabundeando from "../../public/images/vagabundando-well.png";
 import tpago from "../../public/images/mercantil-new.png";
+import colegio from "../../public/images/colegio-cover-card.png";
 
 export default function Home() {
   const constraintsRef = useRef(null);
@@ -937,6 +938,16 @@ export default function Home() {
                       un sitio web dedicado a lugares y actividades que pueden
                       realizarse en México.
                     </motion.p>
+                    <motion.div
+                      className={styles.caseStudies__chips}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      <p>Sitio web</p>
+                      <p>Turismo</p>
+                    </motion.div>
                   </div>
                   <Link
                     href="/vagabundeando"
@@ -974,6 +985,7 @@ export default function Home() {
                   />
                 </motion.div>
               </article>
+
               <article className={styles.mt__reset}>
                 <div className={styles.caseStudies__container}>
                   <div className={styles.caseStudies__description}>
@@ -984,7 +996,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.45 }}
                     >
-                      EatWell
+                      Tu colegio ideal
                     </motion.h3>
                     <motion.p
                       initial={{ opacity: 0, y: 50 }}
@@ -992,19 +1004,32 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.45 }}
                     >
-                      Facilitando el accesso a recetas de comida sencillas,
-                      personalizadas y saludables.
+                      Ayudando a los padres a encontrar el colegio ideal para
+                      sus hijos/as
                     </motion.p>
+                    <motion.div
+                      className={styles.caseStudies__chips}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      <p>Sitio web</p>
+                      <p>Educación</p>
+                    </motion.div>
                   </div>
-                  <Link href="/recipes" className={styles.caseStudies__link}>
-                    Ver caso de estudio
+                  <Link
+                    href="/colegio-ideal"
+                    className={styles.caseStudies__link}
+                  >
+                    Ver caso de estudio{" "}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
-                      strokeWidth={1.5}
+                      strokeWidth="1.5"
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      class="w-6 h-6"
                     >
                       <path
                         strokeLinecap="round"
@@ -1022,7 +1047,7 @@ export default function Home() {
                   transition={{ duration: 0.65 }}
                 >
                   <Image
-                    src={eatwell}
+                    src={colegio}
                     height={379}
                     width={1039}
                     className={styles.covers}
@@ -1051,6 +1076,16 @@ export default function Home() {
                       Haciendo la aplicación de pagos electrónicos más usada en
                       Venezuela más fácil de usar y accesible.
                     </motion.p>
+                    <motion.div
+                      className={styles.caseStudies__chips}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      <p>App</p>
+                      <p>Banca pública</p>
+                    </motion.div>
                   </div>
                   <Link href="/mercantil" className={styles.caseStudies__link}>
                     Ver caso de estudio{" "}
@@ -1079,6 +1114,72 @@ export default function Home() {
                 >
                   <Image
                     src={tpago}
+                    height={379}
+                    width={1039}
+                    className={styles.covers}
+                  />
+                </motion.div>
+              </article>
+
+              <article className={styles.mt__reset}>
+                <div className={styles.caseStudies__container}>
+                  <div className={styles.caseStudies__description}>
+                    <motion.h3
+                      className={styles.caseStudies__title}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      EatWell
+                    </motion.h3>
+                    <motion.p
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      Facilitando el accesso a recetas de comida sencillas,
+                      personalizadas y saludables.
+                    </motion.p>
+                    <motion.div
+                      className={styles.caseStudies__chips}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.45 }}
+                    >
+                      <p>App</p>
+                      <p>Comida</p>
+                    </motion.div>
+                  </div>
+                  <Link href="/recipes" className={styles.caseStudies__link}>
+                    Ver caso de estudio
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={1.5}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+                <motion.div
+                  className={styles.caseStudies__img}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.65 }}
+                >
+                  <Image
+                    src={eatwell}
                     height={379}
                     width={1039}
                     className={styles.covers}

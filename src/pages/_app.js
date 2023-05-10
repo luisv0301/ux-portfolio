@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const poppins = Poppins({
   variable: "--poppins-font",
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
   style: ["italic", "normal"],
 });

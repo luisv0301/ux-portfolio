@@ -15,6 +15,7 @@
   &__link {
     color: #475569;
     transition: color 250ms ease-in;
+    font-weight: 700;
     &:hover {
       color: #b47c04;
     }
@@ -178,10 +179,22 @@
   @include flex($direction: column, $gap: var(--space-xl));
   &__container {
     @include flex($gap: var(--space-xs));
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
     padding-bottom: var(--space-xs);
     flex-wrap: wrap;
+  }
+  &__chips {
+    display: flex;
+    gap: var(--space-xs);
+    & > * {
+      padding: 0.5rem 1rem;
+      border-radius: 50vh;
+      background-color: #f1f5f9;
+      margin: 0;
+      font-size: 12px;
+      margin-top: 1rem;
+      border: 1px solid #e2e8f0;
+    }
   }
   &__title {
     font-size: 44px;
@@ -189,6 +202,8 @@
     font-weight: 500;
   }
   &__link {
+    font-weight: 600;
+    width: fit-content;
     color: #0f172a;
     position: relative;
     display: flex;
@@ -200,7 +215,7 @@
     &::before {
       display: inline-block;
       content: "";
-      background: #0f17291a;
+      background: #4c54671a;
       width: 6rem;
       height: 6rem;
       position: absolute;
@@ -214,7 +229,7 @@
     &::after {
       display: inline-block;
       content: "";
-      background: #0f17291a;
+      background: #4c54671a;
       width: 4rem;
       height: 4rem;
       position: absolute;

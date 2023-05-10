@@ -97,10 +97,12 @@
 
 .header {
   &__coverEdit {
+    @extend %bg-img-properties;
     text-align: center;
     margin-bottom: var(--space-xl);
     background-color: #d9ebfc;
     padding-top: var(--space-x);
+    background-image: url("../../public/images/mercantil-bg.png");
   }
   &__coverEditInner {
     max-width: 800px;
