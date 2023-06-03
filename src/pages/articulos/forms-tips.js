@@ -78,7 +78,7 @@ export default function ModernCSS() {
 
       <Layout>
         <Head>
-          <title>Desarrollo de forms</title>
+          <title>Creando formularios más fáciles de completar</title>
           <meta
             name="description"
             content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
@@ -163,12 +163,12 @@ export default function ModernCSS() {
           </motion.h1>
           <Image src={cover} className={styles.cover} />*/}
           <p>
-            Cuando las personas están tratando de completar tareas en internet y
-            alcanzar sus objetivos, ya sea comprar un producto o ver su película
-            favorita, es muy probable que deban rellenar un formulario. Rellenar
-            un formulario no es realmente la actividad más divertida de
-            realizar, de hecho, el <b>81%</b> de las personas han abandonado un
-            formulario en línea después de empezar a rellenarlo.
+            Es muy probable que las personas deban completar un formulario
+            cuando intentan completar algún objetivo, como comprar un producto o
+            ver su película favorita. Sin embargo, esta tarea no es muy
+            divertida de realizar y en ocasiones puede ser frustrante, de hecho,
+            el <b>81%</b> de las personas ha abandonado un formulario en línea
+            después de comenzar a llenarlo.
           </p>
           <p>
             En este artículo compartiré algunas recomendaciones que he ido
@@ -196,7 +196,7 @@ export default function ModernCSS() {
             Cada campo de un formulario debe estar asociado a una etiqueta
             <code>label</code>. Así, los lectores de pantallas pueden enunciar
             la etiqueta cuando el usuario se sitúe en el campo. Otro beneficio
-            es que esto aumenta el área pata hacer clic, al hacer clic en la
+            es que esto amplía el área de clic, ya que al hacer clic en la
             etiqueta se hace foco en el campo correspondiente.
           </p>
           <SyntaxHighlighter
@@ -223,9 +223,9 @@ export default function ModernCSS() {
             como <code>name</code>, <code>type</code> y <code>id</code> del
             campo. A veces, esta información no es suficiente para que el
             navegador pueda ofrecer las mejores sugerencias, en este caso,
-            podemos ayudar al navegador haciendo uso del atributo autocomplete.
-            Este puede tomar varios valores dependiendo del tipo de información
-            que se requiera.
+            podemos ayudar al navegador haciendo uso del atributo{" "}
+            <code>autocomplete</code>. Este puede tomar varios valores
+            dependiendo del tipo de información que se requiera.
           </p>
           <SyntaxHighlighter
             language="html"
@@ -234,9 +234,9 @@ export default function ModernCSS() {
             {autocompleteExample}
           </SyntaxHighlighter>
           <p>
-            En GetYourGuide utilizan <code>autocomplete="email"</code>
-            para dar sugerencias basadas en valores del mismo tipo que se habían
-            ingresado previamente.
+            En GetYourGuide utilizan <code>autocomplete="email"</code> para dar
+            sugerencias basadas en valores de tipo email que se habían ingresado
+            previamente.
           </p>
           <video
             src={"/images/get-your-guide.mp4"}
@@ -279,13 +279,13 @@ export default function ModernCSS() {
             enter del teclado virtual con las acciones más comunes, como:
             buscar, enviar, añadir nueva línea, etc.
           </p>
-
-          <p>
+          {/*<p>
             En el siguiente ejemplo hacemos uso de{" "}
             <code>enterkeyhint="done"</code> en el último campo del formulario,
             para indicar con la tecla enter que ahora el formulario puede ser
             enviado
-          </p>
+          </p> */}
+
           <h2>Placeholder como etiquetas</h2>
           <p>
             No uses el atributo <code>placeholder</code> para indicar el tipo de
@@ -347,10 +347,10 @@ export default function ModernCSS() {
           <p>
             Para evitar que los usuarios se frustren o cometan errores al llenar
             un formulario, es importante elegir el momento adecuado para mostrar
-            los mensajes de validación. Según algunos estudios, lo ideal es que
-            estos mensajes aparezcan cuando los usuarios han terminado de
-            escribir en un campo y se mueven al siguiente. Esto se puede lograr
-            usando el evento <code>blur</code> en el campo.
+            los mensajes de validación. Lo ideal es que estos aparezcan cuando
+            los usuarios han terminado de escribir en un campo y se muevan al
+            siguiente. Esto se puede lograr usando el evento <code>blur</code>{" "}
+            en el campo.
           </p>
           <p>
             Un ejemplo de este tipo de validación lo encontramos en Stripe, que
@@ -366,9 +366,9 @@ export default function ModernCSS() {
           ></video>
           <p>
             Sin embargo, hay casos en los que puede ser útil mostrar las
-            validaciones mientras los usuarios están escribiendo en un campo.
-            Por ejemplo, Hotjar válida inmediatamente si la contraseña cumple
-            con los requisitos del sistema y ayuda a prevenir errores.
+            validaciones mientras los usuarios están escribiendo. Por ejemplo,
+            Hotjar válida inmediatamente si la contraseña cumple con los
+            requisitos del sistema ayudando a prevenir errores.
           </p>
 
           <video
@@ -390,7 +390,7 @@ export default function ModernCSS() {
             <code>button</code> reciben foco con el teclado por defecto, pero
             otros elementos como <code>div</code> o <code>span</code> no. Por
             eso, es mejor usar los primeros para crear formularios. Si en lugar
-            los elementos nativos vas a crear tus propios componentes, es
+            de los elementos nativos vas a crear tus propios componentes, es
             importante que los pruebes para garantizar que sean accesibles.
           </p>
           <p>
