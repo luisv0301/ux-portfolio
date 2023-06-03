@@ -61,4 +61,7 @@
   .footer__item {
     font-size: 20px;
   }
+  .footer {
+    padding-bottom: 5rem;
+  }
 }

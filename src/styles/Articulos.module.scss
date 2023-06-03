@@ -20,15 +20,70 @@
   }
 }
 
+%bg-img-properties {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  &__coverEdit {
+    @extend %bg-img-properties;
+    text-align: center;
+    margin-bottom: var(--space-x);
+    background-color: #d9ebfc;
+    padding-top: var(--space-x);
+    height: 400px;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+    padding-inline: 1rem;
+  }
+  &__coverEditForm {
+    background-image: url("../../public/images/form-tip-cover.png");
+  }
+  &__coverEditModern {
+    background-image: url("../../public/images/css-modern-cover.png");
+  }
+  &__coverEditInner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__title {
+    text-align: left;
+    font-size: 4.3rem;
+    font-size: clamp(2rem, 0.8rem + 8vw, 4.3rem);
+    color: white;
+    line-height: 1.1;
+    text-shadow: 0 1px 0 black;
+  }
+  & > *:not(:last-child) {
+    margin-bottom: var(--space-xl);
+  }
+}
+
 .main {
+  background: white;
+  transform: translateY(-100px);
+  padding: 1rem;
+  border: 1px dashed hsl(220 14% 94% / 1);
+  border-bottom: 0;
   code {
     font-size: 1rem;
     color: #8b5cf6;
+    background: hsl(258 90% 97% / 1);
+    padding-inline: 0.5rem;
+    border-radius: 4px;
   }
   pre {
     background: #f1f5f9;
     box-shadow: 0 1px 5px #391a7e38;
     border-radius: var(--border-radius);
+    code {
+      background: transparent;
+      padding-inline: 0;
+      border-radius: 0;
+    }
   }
 
   & > * + * {
@@ -38,9 +93,18 @@
     --space-x: 3rem;
   }
   img {
+    border: 1px solid #e2e8f0;
     border-radius: var(--border-radius);
-    outline: 1px dashed #a5b4fc;
-    outline-offset: 8px;
+    /* outline: 1px dashed #a5b4fc; */
+    /* outline-offset: 8px; */
+    box-shadow: 0 6px 6px hsl(214 32% 94% / 1);
+  }
+  video {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--border-radius);
+    /* outline: 1px dashed #a5b4fc; */
+    /* outline-offset: 8px; */
+    box-shadow: 0 6px 6px hsl(214, 32%, 94%);
   }
 }
 .title {
@@ -144,5 +208,21 @@
   .title {
     font-size: 2.5rem;
     line-height: 1.1;
+  }
+
+  .main {
+    transform: translateY(-50px);
+  }
+}
+
+@media (max-width: 420px) {
+  .header__coverEdit {
+    height: 300px;
+  }
+  .main {
+    background: white;
+    transform: translateY(0px);
+    padding: 0;
+    border: 0;
   }
 }

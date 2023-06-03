@@ -15,8 +15,10 @@ import grid from "../../../public/images/grid.gif";
 import flex from "../../../public/images/flex.png";
 import flexWrap from "../../../public/images/flex-wrap.png";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 import { motion, wrap } from "framer-motion";
+import MobileNav from "@/components/MobileNav";
 
 export default function ModernCSS() {
   const codeFlex = `.section {
@@ -68,6 +70,25 @@ export default function ModernCSS() {
 
   return (
     <>
+      <Navbar />
+      <motion.div
+        class={`${styles.header__coverEdit} ${styles.header__coverEditModern}`}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.1 }}
+      >
+        <div class={styles.header__coverEditInner}>
+          <motion.h1
+            initial={{ y: 45, opacity: 0.4 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.65 }}
+            id="top"
+            class={styles.header__title}
+          >
+            Diseño responsive con CSS moderno
+          </motion.h1>
+        </div>
+      </motion.div>
       <Layout>
         <Head>
           <title>Diseño responsive con CSS moderno</title>
@@ -146,14 +167,14 @@ export default function ModernCSS() {
           </Link>
         </nav>
         <main className={styles.main}>
-          <motion.h1
+          {/* <motion.h1
             className={styles.title}
             initial={{ y: 45, opacity: 0.4 }}
             animate={{ y: 0, opacity: 1 }}
           >
             Diseño responsive con CSS moderno
           </motion.h1>
-          <Image src={cover} className={styles.cover} />
+          <Image src={cover} className={styles.cover} /> */}
           <p>
             Por lo general, cuando queremos crear un diseño responsive, nos
             vienen a la mente las media queries. Estas nos permiten ajustar el
@@ -520,6 +541,8 @@ h3 {
         </main>
       </Layout>
       <Footer />
+
+      <MobileNav />
     </>
   );
 }

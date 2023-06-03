@@ -7,7 +7,10 @@ import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { useRef } from "react";
+
+import MobileNav from "@/components/MobileNav";
 
 import character from "../../public/images/square-try.png";
 import eatwell from "../../public/images/eatwell-new.png";
@@ -20,6 +23,7 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar />
       <motion.div className={styles.header__container} ref={constraintsRef}>
         <header className={styles.header}>
           <motion.div
@@ -950,7 +954,7 @@ export default function Home() {
                     </motion.div>
                   </div>
                   <Link
-                    href="/vagabundeando"
+                    href="/proyectos/vagabundeando"
                     className={styles.caseStudies__link}
                   >
                     Ver caso de estudio{" "}
@@ -1019,7 +1023,7 @@ export default function Home() {
                     </motion.div>
                   </div>
                   <Link
-                    href="/colegio-ideal"
+                    href="/proyectos/colegio-ideal"
                     className={styles.caseStudies__link}
                   >
                     Ver caso de estudio{" "}
@@ -1087,7 +1091,10 @@ export default function Home() {
                       <p>Banca pública</p>
                     </motion.div>
                   </div>
-                  <Link href="/mercantil" className={styles.caseStudies__link}>
+                  <Link
+                    href="/proyectos/mercantil"
+                    className={styles.caseStudies__link}
+                  >
                     Ver caso de estudio{" "}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1153,7 +1160,10 @@ export default function Home() {
                       <p>Comida</p>
                     </motion.div>
                   </div>
-                  <Link href="/recipes" className={styles.caseStudies__link}>
+                  <Link
+                    href="/proyectos/recipes"
+                    className={styles.caseStudies__link}
+                  >
                     Ver caso de estudio
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1202,19 +1212,6 @@ export default function Home() {
                   >
                     Diseño responsive con CSS moderno
                   </motion.h3>
-                  <motion.p
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.45 }}
-                  >
-                    Si eres diseñador web o desarrollador frontend, seguramente
-                    estás familiarizado con la importancia de las media queries
-                    para crear diseños responsive. Sin embargo, con los avances
-                    y mejoras que ha tenido CSS en los últimos años, hay otras
-                    técnicas disponibles que pueden simplificar y mejorar la
-                    implementación de diseños.
-                  </motion.p>
                 </div>
                 <Link
                   href="/articulos/modern-css"
@@ -1253,10 +1250,63 @@ export default function Home() {
                 />
               </motion.div>
             </article>
+
+            <article>
+              <div className={styles.caseStudies__container}>
+                <div className={styles.caseStudies__description}>
+                  <motion.h3
+                    className={styles.caseStudies__title}
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45 }}
+                  >
+                    Creando formularios más fáciles de completar
+                  </motion.h3>
+                </div>
+                <Link
+                  href="/articulos/forms-tips"
+                  className={styles.caseStudies__link}
+                  aria-label="Leer Creando formularios más fáciles de completar"
+                >
+                  Leer artículo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
+              <motion.div
+                className={styles.caseStudies__img}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.65 }}
+              >
+                <Image
+                  src="/images/article-cover-two.png"
+                  height={379}
+                  width={1039}
+                  className={styles.covers}
+                />
+              </motion.div>
+            </article>
           </section>
         </div>
       </Layout>
+
       <Footer />
+      <MobileNav />
     </div>
   );
 }
