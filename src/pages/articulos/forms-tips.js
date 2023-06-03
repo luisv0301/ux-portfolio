@@ -166,8 +166,15 @@ export default function ModernCSS() {
             Es muy probable que las personas deban completar un formulario
             cuando intentan completar algún objetivo, como comprar un producto o
             ver su película favorita. Sin embargo, esta tarea no es muy
-            divertida de realizar y en ocasiones puede ser frustrante, de hecho,
-            el <b>81%</b> de las personas ha abandonado un formulario en línea
+            divertida de realizar y en ocasiones puede ser frustrante. Según{" "}
+            <a
+              href="https://themanifest.com/web-design/blog/6-steps-avoid-online-form-abandonment"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              The Manifest
+            </a>
+            , el <b>81%</b> de las personas ha abandonado un formulario en línea
             después de comenzar a llenarlo.
           </p>
           <p>
