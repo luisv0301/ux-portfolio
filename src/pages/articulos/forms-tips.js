@@ -424,11 +424,11 @@ export default function ModernCSS() {
           ></video>
           <h2>Conclusión</h2>
           <p>
-            En conclusión, hay muchas cosas que podemos hacer para mejorar los
-            formularios, desde cambios a nivel visual hasta su implementación en
-            código. Siguiendo las recomendaciones que te he dado, espero puedas
-            crear formularios que sean mucho más claros, fáciles y accesibles
-            para las personas.
+            Hay muchas cosas que podemos hacer para mejorar los formularios,
+            desde cambios a nivel visual hasta su implementación en código.
+            Siguiendo las recomendaciones que te he dado, espero puedas crear
+            formularios que sean mucho más claros, fáciles y accesibles para las
+            personas.
           </p>
         </main>
       </Layout>
