@@ -81,16 +81,17 @@ export default function ModernCSS() {
           <title>Creando formularios más fáciles de completar</title>
           <meta
             name="description"
-            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
+            content="Este artículo ofrece consejos sobre cómo crear formularios fáciles de usar y de llenar. Siguiendo estos consejos, puedes asegurarte de que tus formularios sean claros, concisos y fáciles de usar."
           />
           <meta
             name="keywords"
-            content="Diseñador UX, CSS, CSS moderno, Diseño responsive"
+            content="formularios, facilidad de uso, consejos, buenas prácticas"
           />
           <meta name="author" content="Luis Vásquez" />
+          <meta name="date" content="2023-06-04" />
           <meta
             property="og:image"
-            content="https://i.ibb.co/2yqgHPC/article-cover.png"
+            content="https://i.ibb.co/k4RPKbG/form-tip-cover-1.png"
           />
           <meta
             property="og:url"
@@ -99,15 +100,15 @@ export default function ModernCSS() {
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Diseño responsive con CSS moderno"
+            content="Creando formularios más fáciles de completar"
           />
           <meta
             property="og:description"
-            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
+            content="Este artículo ofrece consejos sobre cómo crear formularios fáciles de usar y de llenar. Siguiendo estos consejos, puedes asegurarte de que tus formularios sean claros, concisos y fáciles de usar."
           />
           <meta
             property="og:image"
-            content="https://i.ibb.co/2yqgHPC/article-cover.png"
+            content="https://i.ibb.co/k4RPKbG/form-tip-cover-1.png"
           />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
@@ -120,15 +121,15 @@ export default function ModernCSS() {
           />
           <meta
             name="twitter:title"
-            content="Diseño responsive con CSS moderno"
+            content="Creando formularios más fáciles de completar"
           />
           <meta
             name="twitter:description"
-            content="Si eres diseñador web o desarrollador frontend, conoces la importancia de las media queries para diseños responsive. CSS ofrece nuevas técnicas para simplificar y mejorar la implementación de estos diseños."
+            content="Este artículo ofrece consejos sobre cómo crear formularios fáciles de usar y de llenar. Siguiendo estos consejos, puedes asegurarte de que tus formularios sean claros, concisos y fáciles de usar."
           />
           <meta
             name="twitter:image"
-            content="https://i.ibb.co/2yqgHPC/article-cover.png"
+            content="https://i.ibb.co/k4RPKbG/form-tip-cover-1.png"
           />
 
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -164,9 +165,10 @@ export default function ModernCSS() {
           <Image src={cover} className={styles.cover} />*/}
           <p>
             Es muy probable que las personas deban completar un formulario
-            cuando intentan completar algún objetivo, como comprar un producto o
-            ver su película favorita. Sin embargo, esta tarea no es muy
-            divertida de realizar y en ocasiones puede ser frustrante. Según{" "}
+            cuando intentan alcanzar algún objetivo mientras navegan por
+            internet, como comprar un producto o ver su película favorita. Sin
+            embargo, esta tarea no es muy divertida de realizar y en ocasiones
+            puede ser frustrante. Según{" "}
             <a
               href="https://themanifest.com/web-design/blog/6-steps-avoid-online-form-abandonment"
               target="_blank"
@@ -179,8 +181,8 @@ export default function ModernCSS() {
           </p>
           <p>
             En este artículo compartiré algunas recomendaciones que he ido
-            aprendiendo de cómo podemos hacer los formularios que sean más
-            fáciles y rápidos de completar. Así que, vamos a ello.
+            aprendiendo de cómo podemos crear formularios que sean más fáciles y
+            rápidos de completar. Así que, vamos a ello.
           </p>
           <h2>Nombres accesibles</h2>
           <p>
@@ -213,8 +215,8 @@ export default function ModernCSS() {
             {labelExample}
           </SyntaxHighlighter>
           <p>
-            Al registrarse en amazon, al hacer clic en las etiquetas se puede
-            ver como se hace foco en el campo al cual se encuentra asociada.
+            Al hacer clic en las etiquetas del formulario de registro de amazon,
+            se hace foco en el campo correspondiente.
           </p>
           <video
             src={"/images/amazon.mp4"}
@@ -310,7 +312,7 @@ export default function ModernCSS() {
             etiqueta. Si el usuario se distrae después de escribir en el primer
             campo, cuando lo retome, ¿que se supone que estaba escribiendo? ¿el
             usuario? ¿el nombre? la única manera de saberlo es borrando lo que
-            escribió para poder visaulizar el valor del <code>placeholder</code>{" "}
+            escribió para poder visualizar el valor del <code>placeholder</code>{" "}
             de nuevo. Frustrante, ¿no?
           </p>
           <Image src={caribe} />
@@ -321,10 +323,11 @@ export default function ModernCSS() {
             formulario con éxito, esta debe de ser siempre visible.
           </p>
           <p>
-            En MercadoLibre, los requisitos para crear una contraseña se
-            encuentran ocultos en un tooltip, si se activa desaparece cuando se
-            empieza a llenar el campo, esto obliga a los usuarios a tener que
-            recordar cada uno de los requisitos aumentando la carga cognitiva.
+            En MercadoLibre, algunos de los requisitos para crear una contraseña
+            se encuentran ocultos en un tooltip, este puede activarse, pero
+            desaparece cuando se empieza a llenar el campo, esto obliga a los
+            usuarios a tener que recordar cada uno de los requisitos aumentando
+            la carga cognitiva.
           </p>
           <video
             src={"/images/meli.mp4"}
@@ -420,13 +423,12 @@ export default function ModernCSS() {
             className={styles.finalDesign__video}
           ></video>
           <h2>Conclusión</h2>
-
           <p>
-            Los formularios son una parte esencial de la experiencia de usuario
-            en internet, pero también pueden ser una fuente de frustración y
-            abandono. Espero que con estas recomendaciones puedas crear
-            formularios que sean mucho más amigables y accesibles para las
-            personas.
+            En conclusión, hay muchas cosas que podemos hacer para mejorar los
+            formularios, desde cambios a nivel visual hasta su implementación en
+            código. Siguiendo las recomendaciones que te he dado, espero puedas
+            crear formularios que sean mucho más claros, fáciles y accesibles
+            para las personas.
           </p>
         </main>
       </Layout>
