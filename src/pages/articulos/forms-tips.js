@@ -90,12 +90,8 @@ export default function ModernCSS() {
           <meta name="author" content="Luis Vásquez" />
           <meta name="date" content="2023-06-04" />
           <meta
-            property="og:image"
-            content="https://i.ibb.co/k4RPKbG/form-tip-cover-1.png"
-          />
-          <meta
             property="og:url"
-            content="https://ux-portfolio-eight.vercel.app/"
+            content="https://ux-portfolio-eight.vercel.app/articulos/forms-tips"
           />
           <meta property="og:type" content="website" />
           <meta
@@ -117,7 +113,7 @@ export default function ModernCSS() {
           />
           <meta
             property="twitter:url"
-            content="https://ux-portfolio-eight.vercel.app/"
+            content="https://ux-portfolio-eight.vercel.app/articulos/forms-tips"
           />
           <meta
             name="twitter:title"
